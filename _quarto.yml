@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Morbid Curiosity, Horror Typology, and VANE"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: 
+        light: flatly
+        dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    code-fold: true
+    code-link: true
+    code-tools: true
+
+
+editor: visual
+

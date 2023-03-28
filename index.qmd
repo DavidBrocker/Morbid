@@ -1,0 +1,902 @@
+---
+title: "Morbid Curiosity, Anxiety & VANE"
+author: "Brendan Jaghab & David Brocker: Farmingdale State College"
+format: 
+  html:
+    code-fold: true
+    code-link: true
+    code-tools: true
+    toc: true
+    toc-depth: 3
+    toc-location: left
+editor: visual
+theme: 
+  light: flatly
+  dark: darkly
+---
+
+## Hypotheses:
+
+**H1:** [Morbid Curiosity](https://uploads.strikinglycdn.com/files/bf7f54ad-91cf-49f6-b465-4afae046eb5b/Morbid%20Curiosity%20Scale%20instructions.pdf?id=3713948 "View MC Scale") should correlate and predict [Horror Typology](https://github.com/DavidBrocker/Morbid/blob/main/scales/The%20psychological%20benefits%20of%20scary%20play%20in%20three%20types%20of%20horror%20fans_preprint%20(6).pdf "View HT Scale").
+
+**H2:** Morbid Curiosity should correlate with [anxiety](https://oml.eular.org/sysModules/obxOML/docs/id_150/State-Trait-Anxiety-Inventory.pdf#page=3 "View STAI"), using a two-tailed approach
+
+**H3:** Morbidly Curious individuals are more likely to expose themselves to negative stimuli
+
+**H4:** Anxious individuals should experience a decrease in anxiety after expose to (voluntary) negative stimuli
+
+## Stimuli
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| Negative                                                                                                                                                 | Positive                                                                              |
++==========================================================================================================================================================+=======================================================================================+
+| An image of a man bleeding and screaming after a plane crash, surrounded by others running away from the crash.                                          | An image of a man screaming for the winning team of a basketball game.                |
+|                                                                                                                                                          |                                                                                       |
+| (**Body**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a third world country revolting against its military on the street                                                                           | An image of a third world country coming together in a moment of prayer.              |
+|                                                                                                                                                          |                                                                                       |
+| (**Violence**)                                                                                                                                           |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image depicting an infamous, run-down haunted house                                                                                                   | An image depicting a newly built suburban home                                        |
+|                                                                                                                                                          |                                                                                       |
+| (**Paranormal**)                                                                                                                                         |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a prisoner being prepared to be killed by the electric chair                                                                                 | An image of a prisoner being convicted not guilty of the charges against him.         |
+|                                                                                                                                                          |                                                                                       |
+| (**Violence**)                                                                                                                                           |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a malnourished refugee in a third-world country                                                                                              | An image of a famous model, with a face of makeup, on a beach                         |
+|                                                                                                                                                          |                                                                                       |
+| (**Body**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a hunter carrying the severed, bloody head of a deer they just hunted.                                                                       | An image of a person carrying a basket of fresh-picked fruit.                         |
+|                                                                                                                                                          |                                                                                       |
+| (**Body**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| Watch a documentary explaining the murders of famous serial killer Dennis Nilsen, that includes his taped confession and how he carried out his murders. | Watch a documentary following the life of former Apple CEO, Steve Jobs.               |
+|                                                                                                                                                          |                                                                                       |
+| (**Mind**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a man putting a gun in a blood man's mouth as he pleads for mercy.                                                                           | An image of a man comforting another man that has just been attacked.                 |
+|                                                                                                                                                          |                                                                                       |
+| (**Violence**)                                                                                                                                           |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a man shooting a polar bear in the arctic.                                                                                                   | An image of a man taking a photograph of a polar bear in the arctic.                  |
+|                                                                                                                                                          |                                                                                       |
+| (**Violence**)                                                                                                                                           |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| Read a book that describes the rituals and magic beliefs of witches. (**Paranormal**)                                                                    | Read a book that describes various ways to improve your gardening skills.             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| Read an FBI profile of serial killer John Dillinger explaining his murders and characteristics.                                                          | Read a profile describing the accomplishments of a well-known astronaut.              |
+|                                                                                                                                                          |                                                                                       |
+| (**Mind**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image of a man injecting heroin on the floor in a drug den.                                                                                           | An image of a man sleeping on the floor next to his two children.                     |
+|                                                                                                                                                          |                                                                                       |
+| (**Body**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| Listen to a podcast that focuses on infamous serial killers and their crimes.                                                                            | Listen to a podcast that comforts people by describing how to manage their anxieties. |
+|                                                                                                                                                          |                                                                                       |
+| (**Mind**)                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An interactive video of how to play the spiritual game, Ouija. (**Paranormal**)                                                                          | An interactive video of how to play the board game, Monopoly.                         |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| An image depicting a witch's circle conducting a ritual.                                                                                                 | An image depicting a church.                                                          |
+|                                                                                                                                                          |                                                                                       |
+| (**Paranormal**)                                                                                                                                         |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| Read an autobiography about the life of a serial killer.                                                                                                 | Read an autobiography about the life and accomplishments of Oprah Winfrey.            |
+|                                                                                                                                                          |                                                                                       |
+| **(Mind)**                                                                                                                                               |                                                                                       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+
+: Table 1. Stimuli Used in Study
+
+### Data Processing
+
+```{r}
+# Load in Packages-------------------------------------------
+
+library(dplyr, warn.conflicts = F) # Tidying data 
+library(stringr) # String manipulation 
+library(ggplot2) # Plotting 
+library(purrr) # Handling lists and iterations 
+library(tidytext) # Tidying text 
+library(forcats) # Dealing with categories 
+library(readxl) # Read Excel 
+library(patchwork) # Plotting Multiple Graphs 
+library(tidyr) # Reshaping 
+library(huxtable, warn.conflicts = F) # Making nice tables 
+library(ggcorrplot, warn.conflicts = F) # Correlation heatmap
+library(skimr) # Continuous Data
+library(janitor, warn.conflicts = F) # Cleaan names/Chi Square
+
+# Establish Functions----------------------------------------
+
+# Correlation Test Plot Function
+correl_test <- function(data, col1,col2){
+
+# Get Correlation: For x and y 
+  d1 <- 
+    data %>% 
+    select({{col1}}) %>% 
+    pull() 
+  d2 <- 
+    data %>% 
+    select({{col2}}) %>% 
+    pull()
+
+# Store correlation test 
+  ct <- cor.test(d1,d2)
+
+# Store DF 
+  degf <- ct$parameter %>% as.numeric()
+
+# Store Confidence Intervals 
+# First as numbers 
+  ci <- round(ct$conf.int[1:2],2)
+
+# Then as text: 95% CI [#,#] 
+  cit <- paste0("95%CI[",ci[1],",",ci[2],"]")
+
+# Store r value 
+  rv <- round(ct$estimate,2)
+
+# Plot and annotate 
+  data %>%
+    # Variable names are passed through with {{brackets}} 
+    ggplot(aes({{col1}},{{col2}}))+ 
+    geom_point() + # To get variable in plain text, use deparse(substitute(variable)) 
+    labs(x = deparse(substitute(col1)), 
+         y = deparse(substitute(col2)), 
+         title = paste0( deparse( substitute(col1))," and ", deparse(substitute(col2))), 
+    # Pull r value or anything else you want! 
+    caption = paste0("r(",degf,")= ",rv," | ",cit)) +
+    theme_minimal() + 
+    theme( 
+    # Center Plot 
+    plot.title = element_text(hjust = .5, size = 16, face ="bold"))
+}
+
+# Standard Error Function
+se <- function(x) { 
+  se <- sd(x)/sqrt(length(x)) 
+}
+
+# Rescale MC and HT
+# Morbid Curiosity
+scale_six <- function(x) {(x/6)} 
+# Horror Typology
+scale_seven <- function(x) {(x/7)} 
+
+# Discrete Scales
+discrete_tab <- function(data,x,lab){
+  name <- 
+    data |> 
+    dplyr::select({{x}}) |> 
+    pull() 
+  
+  tab <- 
+    name |> 
+    tabyl() |> 
+    dplyr::select(-(starts_with("val"))) |> 
+    # Ignore Error for Now,,,
+    adorn_pct_formatting(,,,percent) |> 
+    rename_with(str_to_sentence) |> 
+    hux() |> 
+    theme_article() |> 
+    set_align(everywhere,everywhere,".")
+
+  # Change header row to Variable | | 
+  tab[1,] <- c(str_to_sentence(x),"","")
+  
+  # Get Number of Rows
+  to_in <- nrow(tab)
+  
+  tab[2:to_in,1] <- lab
+
+  return(tab)
+}
+
+# Read and Clean Data----------------------------------------
+ mcu <- read_excel("UpdatedMCdata.xlsx")
+
+# Clean
+ mcu_cln <- 
+  mcu %>% 
+  # Get participants who finished 
+  filter(Finished == "1") %>% 
+  # Get participants who consented 
+  filter(`Consent?` == "1") %>% 
+  # Remove unneeded columns 
+  select(-DistributionChannel,-UserLanguage) %>% 
+  # Clean variable names 
+  rename_with(~gsub(" ","_",.x)) %>% 
+  # Make Score Columns numeric 
+  mutate_at(vars(SC0:SC14),as.numeric) %>% 
+  # Remove SC0 and replace with scale name 
+  rename( 
+    Morbid_Curiosity_Overall = SC0, 
+    Mind = SC1, 
+    Body = SC2, 
+    Violence = SC3,
+    Paranormal = SC4, 
+    Horror_Typology_Overall = SC5, 
+    AJ = SC6, 
+    WK = SC7, 
+    DC = SC8, 
+    Trait = SC9, 
+    State_Pre = SC10, 
+    Positive_Choice = SC11,
+    Negative_Choice = SC12,
+    PN_Choice = SC13, 
+    State_Post = SC14) |>
+  mutate(
+    # Divide all MC Total Score by 24
+    Morbid_Curiosity_Overall = Morbid_Curiosity_Overall/24,
+    # Divide all HT Total Score by 19
+    Horror_Typology_Overall = Horror_Typology_Overall/19 ) |>
+    # Divide each MC Subscale Item by 6
+    mutate_at(vars(Mind:Paranormal),scale_six) |> 
+    # Divide each HT Subscale Item by 6
+    mutate_at(vars(AJ:DC),scale_seven)
+ 
+# Subset Scales
+ mc_scaled <- 
+  mcu_cln %>% 
+  select(Morbid_Curiosity_Overall:State_Post)
+```
+
+## Demographics
+
+```{r}
+demo <- 
+  mcu_cln |> 
+  clean_names() |> 
+  rename(
+    major = major_of_study
+  ) |> 
+  select(gender,race,religion,major)
+
+gen_lab <- 
+  c("Male","Female", "Non-Binary","I prefer not to answer")
+
+
+race_lab <- 
+  c("Black or African American","White","Hispanic/Latino",
+    "Asian","Multi-Racial","Other")
+
+rel_lab <- 
+  c("No Religion","Christian","Buddhist",
+    "Hindu","Jewish","Muslim","Other","I prefer not to answer")
+
+major_lab <- 
+  c("Business Administration and Management", "Science, Technology, and Society",
+    "Computer Programming", "Biology/Biological Sciences", "Applied Psychology", "Other")
+
+# Get Tables for Gender, Age, Ethnicity, Politics, Race, and Education
+gen <- discrete_tab(demo,"gender",gen_lab)
+
+race <- discrete_tab(demo,"race",race_lab)
+
+rel <- discrete_tab(demo,"religion",rel_lab)
+
+major <- discrete_tab(demo,"major",major_lab)
+
+# Build Table
+gen |> 
+  add_rows(race) |> 
+  add_rows(rel) |> 
+  add_rows(major) |> 
+  # Add Header Row
+  insert_row("Variable","N","Percent") |> 
+  set_top_border(row = 1:3,1:3) |> 
+  set_align(col = 1, value = "left") |>  
+  set_align(1,1,"center") |> 
+  set_caption("Table 2: Participant Demographics") |> 
+  set_width(value = 1)
+```
+
+## Correlations
+
+```{r}
+# Clean variable name
+x_var_names <- 
+  c("Positive Choice", "Trait", "Pre State", 
+    "Post State", "Dark Copers", "HT", 
+    "Adrenaline Junkies", "Body","Negative Choice",
+    "MC", "Mind", "Violence", 
+    "Paranormal")
+
+y_var_names <- 
+  c("Violence", "Mind", "MC", 
+    "Negative Choice", "Body", "Adrenaline Junkies", 
+    "HT", "Dark Copers", "Post State", 
+    "Pre State", "Trait", "Positive Choice","White Knuclers")
+
+# Create Cor Matrix
+heat_plot <- 
+  mc_scaled |> 
+  janitor::clean_names() |> 
+  select(-pn_choice) |> 
+  cor()
+
+# Get p-value matrix
+heat_pmat <- 
+  heat_plot |>
+  cor_pmat(sig.level = .05)
+
+# Plot
+heat_plot |> 
+  ggcorrplot(
+    type = "lower",
+    hc.order = TRUE,
+    p.mat = heat_pmat,
+    #insig = "pch",
+    lab = TRUE,
+    method = "circle",
+    lab_size = 2,
+    colors = c("#780000","white","#003049"),
+    legend.title = "Correlation") +
+  scale_y_discrete(labels = y_var_names, position='right') +
+  scale_x_discrete(labels = x_var_names, position = "bottom") + labs(caption = "Fig 1. Correlation Matrix Across all numeric variables. Crossed items represent non-significant correlations"
+  ) +
+  theme(axis.text.x = element_text(angle = 90, 
+                                   hjust = 1),
+        plot.caption = element_text(face = "italic",
+                                    hjust = .2)) 
+ 
+```
+
+## State and Trait Comparisons
+
+```{r}
+cor_item <- 
+  mc_scaled |> 
+   select(-PN_Choice) |> 
+  relocate(State_Post, .before = State_Pre) |> 
+  cor(mc_scaled) |> 
+  round(2) |> 
+  as_tibble(rownames = "Var") 
+
+cor_item <- 
+  cor_item |> 
+  as.matrix()
+
+diag(cor_item) <- NA
+
+cor_item[upper.tri(cor_item)] <- NA
+
+cor_item[is.na(cor_item)] <- ""
+
+cor_item |> 
+  hux() |> 
+  theme_article()|> 
+  set_width(value = 1)
+```
+
+### Post vs. Pre
+
+```{r}
+t.test(mc_scaled$State_Post,mc_scaled$State_Pre, paired = T) |> 
+  broom::tidy() |> 
+     rename(
+    t = statistic,
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+    set_caption("Table 3:  No significant difference (or decrease in anxiety)") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+### Pre vs. Trait
+
+```{r}
+t.test(mc_scaled$State_Pre,mc_scaled$Trait,paired = T) |> 
+  tidy() |> 
+    rename(
+    t = statistic,
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 4: Significant Difference between Pre Anxiety and Trait Anxiety
+") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+### Post vs. Trait
+
+```{r}
+t.test(mc_scaled$State_Post,mc_scaled$Trait,paired = T) |> 
+  broom::tidy() |> 
+    rename(
+    t = statistic, 
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 5: Significant Difference between Posttest Anxiety and Overall") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+### STAI Measure: Low Anxiety vs. High Anxiety (Pre)
+
+```{r}
+mc_scaled %>% 
+  select(State_Pre) %>% 
+  mutate(Anxiety_Level = 
+           ifelse(State_Pre> 40,"High Anxiety","Low Anxiety")) %>% 
+  select(Anxiety_Level) |> 
+  table() %>% 
+  janitor::chisq.test() |> 
+  broom::tidy() |> 
+  rename(
+    p = p.value, 
+    df = parameter
+  ) |> 
+  mutate(
+    method = "Chi-squared test"
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 6: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the pretest measure of STAI") |> 
+  set_caption_pos("bottom") |> 
+  set_width(value = 1)
+```
+
+### STAI Measure: Low Anxiety vs. High Anxiety (Pre)
+
+```{r}
+mc_scaled %>% 
+  select(State_Post) %>%
+  mutate(Anxiety_Level = 
+           ifelse(State_Post > 40,"High Anxiety","Low Anxiety")) %>%
+  select(Anxiety_Level) %>%
+  table() %>%
+  janitor::chisq.test() |> 
+  broom::tidy() |> 
+   rename(
+    p = p.value, 
+    df = parameter
+  ) |> 
+  mutate(
+    method = "Chi-squared test"
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+    set_caption("Table 7: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the posttest measure of STAI") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+### STAI Measure: Low Anxiety vs. High Anxiety (Trait)
+
+```{r}
+mc_scaled %>% 
+  select(Trait) %>%
+  mutate(Anxiety_Level = 
+           ifelse(Trait > 40,"High Anxiety","Low Anxiety")) %>%
+  select(Anxiety_Level) %>%
+  table() %>%
+  janitor::chisq.test() |> 
+  broom::tidy() |> 
+   rename(
+    p = p.value, 
+    df = parameter
+  ) |> 
+  mutate(
+    method = "Chi-squared test"
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+    set_caption("Table 8: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the trait measure of STAI") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+```{r}
+mc_scaled %>% 
+  select(starts_with("State")) %>%
+  rename_with(~gsub("State_","",.x)) |> 
+  pivot_longer(cols = everything(),
+               names_to = "time",
+               values_to = "score") |>
+  mutate(time = factor(time, levels = c("Pre", "Post"))) |>
+  group_by(time) |> 
+  summarize(mean = mean(score),
+            se = se(score)) %>% 
+  ggplot(aes(time,mean)) +
+  geom_pointrange(aes(ymin = mean - se, ymax = mean + se)) + 
+  scale_color_manual(values = c("red", "black")) +
+  theme_minimal() + 
+  labs(
+    x = "\nTime",
+    y = "Average\n",
+    title = "Average State Anxiety Scores Before & After VANE\n",
+    caption = "Fig. 2: No significant decrease in anxiety levels after exposure to VANE."
+  ) +
+  theme(plot.title = element_text(hjust = 0.5,
+                                  face = "bold"),
+        plot.caption = element_text(hjust = .2,
+                                    face = "italic")) +
+  ylim(30,46)
+
+
+```
+
+## Regressions
+
+### Horror Typology as a function of Morbid Curiosity
+
+```{r}
+
+mc_ht.mod <- summary(lm(mc_scaled$Morbid_Curiosity_Overall ~ mc_scaled$Horror_Typology_Overall))
+
+# Make Table
+mc_tab <- 
+  mc_ht.mod |> 
+  huxreg(error_pos = "right") |> 
+  theme_article() |> 
+  set_caption("Table 9: Model showing Morbid Curiosity Overall score as a predictor of Horror Typology Overall score") |> 
+  set_caption_pos("bottom") |> 
+  set_width(value = 1)
+
+# Rename Model Name
+mc_tab[1,2] <- "Model 1"
+# Rename Model Coeficients 
+mc_tab[2:3,1] <- c("Morbid Curiosity Overall","Horror Typology Overall")
+
+mc_tab
+
+# Plot the relationship
+correl_test(mc_scaled, Morbid_Curiosity_Overall,Horror_Typology_Overall) +
+  labs(x = "\nMorbid Curiosity Overall",
+       y = "Horror Typology Overall\n",
+       title = "Morbid Curiosity Overall and Horror Typology Overall\n",
+       caption = "Fig 3. Correlation between Morbid Curiosity and Horror Typology") +
+  geom_abline(color = "darkred") 
+```
+
+### MC Overall and Pre/Post
+
+```{r}
+
+mc_stai.mod <- 
+  lm(Morbid_Curiosity_Overall~ State_Pre + State_Post,data = mc_scaled) %>%
+  summary() 
+
+mc_st_tab <- 
+  mc_stai.mod |> 
+  huxreg(error_pos = "right") |> 
+  theme_article() |> 
+  set_caption("Table 10: Model showing Morbid Curiosity Overall score as a poor predictor of STAI Pre and Post") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+
+mc_st_tab[1,2] <- "Model 2"
+
+mc_st_tab[2,1] <- c("Morbid Curiosity Overall")
+
+mc_st_tab
+  
+```
+
+## Negative & Positive Choice
+
+```{r}
+mc_scaled |>
+  select(Positive_Choice, Negative_Choice) |>
+  rename_with( ~ gsub("_Choice", "", .x, )) |>
+  pivot_longer(cols = everything(),
+               names_to = "Choice",
+               values_to = "Picked") |>
+  group_by(Choice) |>
+  summarize(M = mean(Picked),
+            SE = se(Picked)) |>
+  ggplot(aes(Choice, M)) +
+  geom_pointrange(aes(
+    ymin = M - SE,
+    ymax = M + SE,
+    colour = Choice),
+    fatten = 6,
+    show.legend = F) +
+  geom_line(group = 1) +
+  theme_minimal() +
+  labs(x = "\nChoice",
+       y = "Average\n",
+       title = "Average Choice of Stimuli Among Participants",
+       caption = "Fig 4: Results indicate that on average, participants chose significantally more positive choices than negative choices.") +
+  theme(axis.text = element_text(color = "black"),
+        plot.title = element_text(hjust = 0.5, face = "bold"),
+        axis.title.y = element_text(size = 12),
+        plot.caption = element_text(hjust = .2,
+                                    face = "italic")) +
+  scale_color_manual(values = c("darkgreen", "maroon"))
+```
+
+### Negative/Positive choice:
+
+```{r}
+choice_tt <- 
+  t.test(mc_scaled$Negative_Choice,mc_scaled$Positive_Choice,
+       paired = T,
+       var.equal = T) 
+
+choice_tt |> 
+  tidy() |> 
+  rename(
+    t = statistic,
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 11: Paired t-test showing participants chose significantally more positive items.") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+```{r}
+mc_neg.mod <- 
+  lm(data = mc_scaled, Morbid_Curiosity_Overall ~ Negative_Choice) |> 
+  summary()
+
+mc_neg.mod_tab <- 
+  mc_neg.mod |> 
+  huxreg(error_pos = "right") |> 
+  theme_article() |> 
+  set_caption("Table 12: Model showing negative choice selection is accurately predicted by Morbid Curiosity Scale score") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+
+mc_neg.mod_tab[1,2] <- "Model 3"
+
+mc_neg.mod_tab[2,1] <- "Morbid Curiosity Scale"
+
+mc_neg.mod_tab
+```
+
+```{r}
+mcu_cln |> 
+  ggplot(aes(Morbid_Curiosity_Overall,Negative_Choice)) + 
+  geom_point() + 
+  theme_minimal() +
+  geom_smooth(method = "lm") +
+  labs(x = "\nMorbid Curiosity Score", 
+       y = "Number of Negative Choices\n",
+       caption = "Fig 5: Correlation between overall Morbid Curiosity and subsequent number of negative items picked: (r = .66, r2 = .43)") +
+  theme(
+    plot.caption = element_text(face = "italic",
+                                hjust = .2),
+     axis.text = element_text(color = "black")
+  )
+  
+```
+
+## Text Analysis
+
+```{r}
+mcu_cln %>% 
+  filter(Finished == "1") %>% 
+  filter('Consent?' == "1") %>% 
+  # Isolate Participant & Comment 
+  select(ResponseId,Why) %>% 
+  # Separate each sentence into word by word 
+  unnest_tokens(word,Why) %>% 
+  # Remove stop_words 
+  anti_join(stop_words) %>% 
+  count(word,sort = T) %>% 
+  na.omit() %>% 
+  top_n(20,n) %>% 
+  ggplot(aes(reorder(word,n),n,fill =n)) + 
+  geom_bar(stat = "identity", 
+           show.legend = F)+ 
+  coord_flip() + 
+  theme_minimal() + 
+  labs( y = "Frequency/n", 
+        x = "/nWord", 
+        title = "Most Frequently Used Words") + 
+  theme(axis.text.x = element_text(hjust = 1)) + 
+  scale_fill_continuous()
+```
+
+## Morbid Curiosity and Gender
+
+```{r}
+# Separate Gender and MC
+gen_tt <- 
+  mcu_cln %>% 
+  select(Gender,Morbid_Curiosity_Overall) %>% 
+  filter(Gender %in% 1:2) |> 
+  mutate(Gender = 
+           ifelse(Gender == 1,"Male","Female"))
+
+t.test(gen_tt$Morbid_Curiosity_Overall~gen_tt$Gender) |> 
+  tidy() |> 
+    rename(
+    t = statistic,
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 12: Independent t-test shows no significant difference between scores on Morbid Curiosity Scale.") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+
+```
+
+## Horror Typology and Gender
+
+```{r}
+genht_tt <- 
+  mcu_cln %>% 
+  select(Gender,Horror_Typology_Overall) %>% 
+  filter(Gender %in% 1:2) |> 
+  mutate(Gender = 
+           ifelse(Gender == 1,"Male","Female")) 
+
+t.test(genht_tt$Horror_Typology_Overall~genht_tt$Gender) |> 
+  broom::tidy() |> 
+    rename(
+    t = statistic,
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 13: Independent t-test shows no significant difference between scores on Horror Typology Scale.") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+## Morbid Curiosity and Participant Major
+
+```{r}
+mj_mc <- 
+  mcu_cln %>% 
+  clean_names() |> 
+  select(major_of_study,morbid_curiosity_overall) %>% 
+  mutate(major_of_study = case_when( 
+    major_of_study == 1 ~ "Business Administration and Management", 
+    major_of_study == 2 ~ "Science, Technology, and Society", 
+    major_of_study == 3 ~ "Computer Programming", 
+    major_of_study == 4 ~ "Biology/Biological Sciences",
+    major_of_study == 5 ~ "Mechanical Engineering", 
+    major_of_study == 6 ~ "Applied Psychology", 
+    major_of_study == 7 ~ "Other"))
+
+# Create aov_car object
+aov(mj_mc$morbid_curiosity_overall ~ mj_mc$major_of_study)
+```
+
+## General Questions:
+
+I consider myself to be morbidly curious?
+
+```{r}
+gen_quest <- 
+  mcu_cln |> 
+  clean_names() |> 
+  rename(
+    people_mc = a_d1, 
+    self_mc = a_d2, 
+    self_anx = a_d3,
+    self_hor = a_d4
+  ) |> 
+  mutate_at(vars(people_mc:self_hor),as.numeric)
+
+cor.test(gen_quest$self_mc,gen_quest$morbid_curiosity_overall) |> 
+  tidy() |> 
+  rename(
+    df = parameter,
+    p = p.value,
+    t = statistic,
+    r = estimate
+  ) |> 
+  hux() |> 
+  set_caption("Table 14: Participants self rating of being morbidly curious was significantlly positivly correlated with morbid curiosity score") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+I consider myself to enjoy horror related content such Books, TV shows, Movies, Attractions, Podcast, etc.
+
+```{r}
+cor.test(gen_quest$self_hor,gen_quest$horror_typology_overall) |> 
+    tidy() |>
+    rename(
+    df = parameter,
+    p = p.value,
+    t = statistic,
+    r = estimate
+  ) |> 
+  hux() |> 
+  set_caption("Table 15: Participants self rating of enjoying the horror genre was significantlly positivly correlated with horror typology score") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+I consider myself to be an anxious person.
+
+```{r}
+cor.test(gen_quest$self_anx, gen_quest$trait) |> 
+    tidy() |>   
+  rename(
+    df = parameter,
+    p = p.value,
+    t = statistic,
+    r = estimate
+  ) |> 
+  hux() |> 
+  set_caption("Table 16: Participants self rating of anxiety was significantly positively correlated with the trait measure of anxiety.") |> 
+  set_caption_pos("bottom")|> 
+  set_width(value = 1)
+```
+
+I find people to be morbidly curious.
+
+```{r}
+t.test(gen_quest$people_mc, mu = 4, alternative = "greater") |> 
+    broom::tidy() |> 
+    rename(
+    t = statistic,
+    p = p.value, 
+    df = parameter,
+    `mean difference` = estimate
+  ) |> 
+  hux() |> 
+  theme_article() |> 
+  set_caption("Table 17: Single-sample t-test against the midpoint of 4 showed that people generally believe others to be morbidly curious.") |> 
+  set_caption_pos("bottom") |> 
+  set_width(value = 1)
+```
+
+## Descriptive Statistics of All Variables
+
+```{r}
+
+gen_quest |> 
+  select(age,self_mc:trait_questionnaire_20,
+         post_state_1:post_state_20,
+         morbid_curiosity_overall:state_post,-pn_choice) |>
+  mutate_all(as.numeric) |> 
+  rename_at(vars(starts_with("state_")),~gsub("questionnaire_","",.x)) |> 
+    rename_at(vars(starts_with("trait_")),~gsub("questionnaire_","",.x)) |> 
+  relocate(state_pre, .before = trait) |> 
+  relocate(state_post, .before = trait) |> 
+  skim() |> 
+  yank("numeric") |> 
+  select(-starts_with("p"), 
+         -n_missing, 
+         -complete_rate) |> 
+  rename( 
+    variable = skim_variable,
+    M = mean, 
+    SD = sd
+    ) |>
+  mutate(
+    `M(SD)` = paste0(round(M,2),"(",round(SD,2),")")) |> 
+  select(-M,-SD) |>
+  select(variable, `M(SD)`, hist) |> 
+  hux() |> 
+  theme_article() |> 
+  set_width(value = 1) |> 
+  set_align(col = 3, value = "center") |> 
+  set_caption("Table 18: Descriptive statistics of all numeric variables.")
+```
