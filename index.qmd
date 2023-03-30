@@ -481,7 +481,7 @@ mc_scaled %>%
   set_width(value = 1)
 ```
 
-```{r}
+```{r pre-post}
 mc_scaled %>% 
   select(starts_with("State")) %>%
   rename_with(~gsub("State_","",.x)) |> 
@@ -500,7 +500,7 @@ mc_scaled %>%
     x = "\nTime",
     y = "Average\n",
     title = "Average State Anxiety Scores Before & After VANE\n",
-    caption = "Fig. 2: No significant decrease in anxiety levels after exposure to VANE."
+    caption = "Fig. 2: No significant decrease in anxiety levels a fter exposure to VANE."
   ) +
   theme(plot.title = element_text(hjust = 0.5,
                                   face = "bold"),
@@ -515,7 +515,7 @@ mc_scaled %>%
 
 ### Horror Typology as a function of Morbid Curiosity
 
-```{r}
+```{r mc-ht-cor}
 
 mc_ht.mod <- summary(lm(mc_scaled$Morbid_Curiosity_Overall ~ mc_scaled$Horror_Typology_Overall))
 
@@ -572,7 +572,7 @@ mc_st_tab
 
 ## Negative & Positive Choice
 
-```{r}
+```{r neg-pos-choice}
 mc_scaled |>
   select(Positive_Choice, Negative_Choice) |>
   rename_with( ~ gsub("_Choice", "", .x, )) |>
@@ -647,7 +647,7 @@ mc_neg.mod_tab[2,1] <- "Morbid Curiosity Scale"
 mc_neg.mod_tab
 ```
 
-```{r}
+```{r mc-neg-choice}
 #| message: false
 mcu_cln |> 
   ggplot(aes(Morbid_Curiosity_Overall,Negative_Choice)) + 
