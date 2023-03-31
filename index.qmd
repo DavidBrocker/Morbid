@@ -111,6 +111,7 @@ library(huxtable, warn.conflicts = F) # Making nice tables
 library(ggcorrplot, warn.conflicts = F) # Correlation heatmap
 library(skimr) # Continuous Data
 library(janitor, warn.conflicts = F) # Cleaan names/Chi Square
+library(colorspace)
 
 # Establish Functions----------------------------------------
 
@@ -300,52 +301,48 @@ gen |>
 
 ## Correlations
 
-```{r}
-# Clean variable name
-x_var_names <- 
-  c("Positive Choice", "Trait", "Pre State", 
-    "Post State", "Dark Copers", "HT", 
-    "Adrenaline Junkies", "Body","Negative Choice",
-    "MC", "Mind", "Violence", 
-    "Paranormal")
-
-y_var_names <- 
-  c("Violence", "Mind", "MC", 
-    "Negative Choice", "Body", "Adrenaline Junkies", 
-    "HT", "Dark Copers", "Post State", 
-    "Pre State", "Trait", "Positive Choice","White Knuclers")
-
-# Create Cor Matrix
-heat_plot <- 
-  mc_scaled |> 
-  janitor::clean_names() |> 
-  select(-pn_choice) |> 
-  cor()
-
-# Get p-value matrix
-heat_pmat <- 
-  heat_plot |>
-  cor_pmat(sig.level = .05)
-
-# Plot
-heat_plot |> 
-  ggcorrplot(
-    type = "lower",
-    hc.order = TRUE,
-    p.mat = heat_pmat,
-    #insig = "pch",
-    lab = TRUE,
-    method = "circle",
-    lab_size = 2,
-    colors = c("#780000","white","#003049"),
-    legend.title = "Correlation") +
-  scale_y_discrete(labels = y_var_names, position='right') +
-  scale_x_discrete(labels = x_var_names, position = "bottom") + labs(caption = "Fig 1. Correlation Matrix Across all numeric variables. Crossed items represent non-significant correlations"
-  ) +
-  theme(axis.text.x = element_text(angle = 90, 
-                                   hjust = 1),
-        plot.caption = element_text(face = "italic",
-                                    hjust = .2)) 
+```{r ggcor}
+# Clean variable name 
+nheat <-  
+  mc_scaled |>  
+  rename(`Morbid Curiosity` = Morbid_Curiosity_Overall, 
+         `Horror Typology` = Horror_Typology_Overall, 
+         `Adrenaline Junkies` = AJ, 
+         `White Knucklers` = WK,  
+         `Dark Copers` = DC, 
+         `State Anxiety (Pre)` = State_Pre, 
+         `State Anxiety (Post)` = State_Post, 
+         `Positive` = Positive_Choice, 
+         `Negative` = Negative_Choice 
+     
+  ) |>  
+  select(-PN_Choice) |>  
+  cor() 
+  
+# Create Correlation (p) Matrix 
+nheat_pmat <-  
+  nheat |> 
+  cor_pmat(sig.level = .05) 
+  
+  
+# Plot 
+#cor.plot <-  
+  nheat |>  
+  ggcorrplot( 
+    outline.color = "white", 
+    colors = diverge_hcl(3, palette='Blue Red'), 
+    hc.order = T, 
+    type = "lower", 
+    lab = TRUE, 
+    p.mat = nheat_pmat, 
+    insig = "blank", 
+    tl.cex = 10, 
+    tl.srt = 90, 
+    lab_size = 2.5, 
+    lab_col = "white", 
+    legend.title = "Correlation", 
+    ggtheme = theme_minimal()) + 
+  labs(caption = "Fig 1. Correlation Matrix Across all numeric variables. Blank items represent non-significant correlations. \nHierarchical clustering is applied.") + theme(plot.caption = element_text(hjust = .5)) 
  
 ```
 
