@@ -1176,7 +1176,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="va">mc_st_tab</span> <span class="op">&lt;-</span> </span>
 <span>  <span class="va">mc_stai.mod</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://hughjonesd.github.io/huxtable/reference/huxreg.html">huxreg</a></span><span class="op">(</span>error_pos <span class="op">=</span> <span class="st">"right"</span>,</span>
-<span>         statistics <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"N. obs."</span> <span class="op">=</span> <span class="st">"nobs"</span>, </span>
+<span>         statistics <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span> </span>
 <span>      <span class="st">"R squared"</span> <span class="op">=</span> <span class="st">"r.squared"</span>, <span class="st">"F statistic"</span> <span class="op">=</span> <span class="st">"statistic"</span>,</span>
 <span>      <span class="st">"P value"</span> <span class="op">=</span> <span class="st">"p.value"</span><span class="op">)</span>,</span>
 <span>      bold_signif <span class="op">=</span> <span class="fl">.05</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
@@ -1189,8 +1189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span></span>
 <span><span class="va">mc_st_tab</span><span class="op">[</span><span class="fl">2</span>,<span class="fl">1</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Morbid Curiosity"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">mc_st_tab</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://hughjonesd.github.io/huxtable/reference/align.html">set_align</a></span><span class="op">(</span>row <span class="op">=</span> <span class="fl">5</span>, col <span class="op">=</span> <span class="fl">2</span>, value <span class="op">=</span> <span class="st">"center"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="va">mc_st_tab</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 
 <table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 100%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-8">
@@ -1216,11 +1215,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 0pt; font-weight: bold;">State_Post</th>
 <td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0.013&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 0pt 6pt 6pt; font-weight: normal;">(0.016)</td>
-</tr>
-<tr>
-<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 0pt; font-weight: bold;">N. obs.</th>
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">93</td>
-<td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 0pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr>
 <tr>
 <th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 0pt; font-weight: bold;">R squared</th>
@@ -1340,9 +1334,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="va">mc_neg.mod_tab</span> <span class="op">&lt;-</span> </span>
 <span>  <span class="va">mc_neg.mod</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://hughjonesd.github.io/huxtable/reference/huxreg.html">huxreg</a></span><span class="op">(</span>error_pos <span class="op">=</span> <span class="st">"right"</span>,</span>
-<span>         statistics <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"N. obs."</span> <span class="op">=</span> <span class="st">"nobs"</span>, </span>
-<span>      <span class="st">"R squared"</span> <span class="op">=</span> <span class="st">"r.squared"</span>, <span class="st">"F statistic"</span> <span class="op">=</span> <span class="st">"statistic"</span>,</span>
-<span>      <span class="st">"P value"</span> <span class="op">=</span> <span class="st">"p.value"</span><span class="op">)</span>,</span>
+<span>         statistics <span class="op">=</span>  <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"R squared"</span> <span class="op">=</span> <span class="st">"r.squared"</span>, <span class="st">"F statistic"</span> <span class="op">=</span> <span class="st">"statistic"</span>,</span>
+<span>      <span class="st">"P value"</span> <span class="op">=</span> <span class="st">"p.value"</span><span class="op">)</span>, </span>
 <span>      bold_signif <span class="op">=</span> <span class="fl">.05</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://hughjonesd.github.io/huxtable/reference/themes.html">theme_article</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://hughjonesd.github.io/huxtable/reference/caption.html">set_caption</a></span><span class="op">(</span><span class="st">"Table 12: Model showing negative choice selection is accurately predicted by Morbid Curiosity Scale score"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
@@ -1353,7 +1346,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span></span>
 <span><span class="va">mc_neg.mod_tab</span><span class="op">[</span><span class="fl">2</span>,<span class="fl">1</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"Morbid Curiosity"</span></span>
 <span></span>
-<span><span class="va">mc_neg.mod_tab</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://hughjonesd.github.io/huxtable/reference/align.html">set_align</a></span><span class="op">(</span>row <span class="op">=</span> <span class="fl">4</span>, col <span class="op">=</span> <span class="fl">2</span>, value <span class="op">=</span> <span class="st">"center"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="va">mc_neg.mod_tab</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 
 <table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 100%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-10">
@@ -1374,11 +1367,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 0pt; font-weight: bold;">Negative_Choice</th>
 <td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: bold;">0.170 ***</td>
 <td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 0pt 6pt 6pt; font-weight: bold;">(0.020)</td>
-</tr>
-<tr>
-<th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 0pt; font-weight: bold;">N. obs.</th>
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">93</td>
-<td style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 0pt 6pt 6pt; font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 </tr>
 <tr>
 <th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0pt;    padding: 6pt 6pt 6pt 0pt; font-weight: bold;">R squared</th>
@@ -3333,7 +3321,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb25-616"><a href="#cb25-616" aria-hidden="true" tabindex="-1"></a>mc_st_tab <span class="ot">&lt;-</span> </span>
 <span id="cb25-617"><a href="#cb25-617" aria-hidden="true" tabindex="-1"></a>  mc_stai.mod <span class="sc">|&gt;</span> </span>
 <span id="cb25-618"><a href="#cb25-618" aria-hidden="true" tabindex="-1"></a>  <span class="fu">huxreg</span>(<span class="at">error_pos =</span> <span class="st">"right"</span>,</span>
-<span id="cb25-619"><a href="#cb25-619" aria-hidden="true" tabindex="-1"></a>         <span class="at">statistics =</span> <span class="fu">c</span>(<span class="st">"N. obs."</span> <span class="ot">=</span> <span class="st">"nobs"</span>, </span>
+<span id="cb25-619"><a href="#cb25-619" aria-hidden="true" tabindex="-1"></a>         <span class="at">statistics =</span> <span class="fu">c</span>( </span>
 <span id="cb25-620"><a href="#cb25-620" aria-hidden="true" tabindex="-1"></a>      <span class="st">"R squared"</span> <span class="ot">=</span> <span class="st">"r.squared"</span>, <span class="st">"F statistic"</span> <span class="ot">=</span> <span class="st">"statistic"</span>,</span>
 <span id="cb25-621"><a href="#cb25-621" aria-hidden="true" tabindex="-1"></a>      <span class="st">"P value"</span> <span class="ot">=</span> <span class="st">"p.value"</span>),</span>
 <span id="cb25-622"><a href="#cb25-622" aria-hidden="true" tabindex="-1"></a>      <span class="at">bold_signif =</span> .<span class="dv">05</span>) <span class="sc">|&gt;</span> </span>
@@ -3346,349 +3334,347 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb25-629"><a href="#cb25-629" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-630"><a href="#cb25-630" aria-hidden="true" tabindex="-1"></a>mc_st_tab[<span class="dv">2</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Morbid Curiosity"</span>)</span>
 <span id="cb25-631"><a href="#cb25-631" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-632"><a href="#cb25-632" aria-hidden="true" tabindex="-1"></a>mc_st_tab <span class="sc">|&gt;</span> </span>
-<span id="cb25-633"><a href="#cb25-633" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">row =</span> <span class="dv">5</span>, <span class="at">col =</span> <span class="dv">2</span>, <span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-634"><a href="#cb25-634" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb25-635"><a href="#cb25-635" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb25-636"><a href="#cb25-636" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-637"><a href="#cb25-637" aria-hidden="true" tabindex="-1"></a><span class="fu">## Negative &amp; Positive Choice</span></span>
-<span id="cb25-638"><a href="#cb25-638" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-639"><a href="#cb25-639" aria-hidden="true" tabindex="-1"></a><span class="in">```{r neg-pos-choice}</span></span>
-<span id="cb25-640"><a href="#cb25-640" aria-hidden="true" tabindex="-1"></a>mc_scaled <span class="sc">|&gt;</span></span>
-<span id="cb25-641"><a href="#cb25-641" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Positive_Choice, Negative_Choice) <span class="sc">|&gt;</span></span>
-<span id="cb25-642"><a href="#cb25-642" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>( <span class="sc">~</span> <span class="fu">gsub</span>(<span class="st">"_Choice"</span>, <span class="st">""</span>, .x, )) <span class="sc">|&gt;</span></span>
-<span id="cb25-643"><a href="#cb25-643" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">everything</span>(),</span>
-<span id="cb25-644"><a href="#cb25-644" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"Choice"</span>,</span>
-<span id="cb25-645"><a href="#cb25-645" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"Picked"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb25-646"><a href="#cb25-646" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Choice) <span class="sc">|&gt;</span></span>
-<span id="cb25-647"><a href="#cb25-647" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">M =</span> <span class="fu">mean</span>(Picked),</span>
-<span id="cb25-648"><a href="#cb25-648" aria-hidden="true" tabindex="-1"></a>            <span class="at">SE =</span> <span class="fu">se</span>(Picked)) <span class="sc">|&gt;</span></span>
-<span id="cb25-649"><a href="#cb25-649" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Choice, M)) <span class="sc">+</span></span>
-<span id="cb25-650"><a href="#cb25-650" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>(<span class="fu">aes</span>(</span>
-<span id="cb25-651"><a href="#cb25-651" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymin =</span> M <span class="sc">-</span> SE,</span>
-<span id="cb25-652"><a href="#cb25-652" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymax =</span> M <span class="sc">+</span> SE,</span>
-<span id="cb25-653"><a href="#cb25-653" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> Choice),</span>
-<span id="cb25-654"><a href="#cb25-654" aria-hidden="true" tabindex="-1"></a>    <span class="at">fatten =</span> <span class="dv">6</span>,</span>
-<span id="cb25-655"><a href="#cb25-655" aria-hidden="true" tabindex="-1"></a>    <span class="at">show.legend =</span> F) <span class="sc">+</span></span>
-<span id="cb25-656"><a href="#cb25-656" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">group =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb25-657"><a href="#cb25-657" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb25-658"><a href="#cb25-658" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">Choice"</span>,</span>
-<span id="cb25-659"><a href="#cb25-659" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Average</span><span class="sc">\n</span><span class="st">"</span>,</span>
-<span id="cb25-660"><a href="#cb25-660" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Average Choice of Stimuli Among Participants"</span>,</span>
-<span id="cb25-661"><a href="#cb25-661" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Fig 4: Results indicate that on average, participants chose significantally more positive choices than negative choices."</span>) <span class="sc">+</span></span>
-<span id="cb25-662"><a href="#cb25-662" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>),</span>
-<span id="cb25-663"><a href="#cb25-663" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb25-664"><a href="#cb25-664" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>),</span>
-<span id="cb25-665"><a href="#cb25-665" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> .<span class="dv">5</span>,</span>
-<span id="cb25-666"><a href="#cb25-666" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">face =</span> <span class="st">"italic"</span>)) <span class="sc">+</span></span>
-<span id="cb25-667"><a href="#cb25-667" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkgreen"</span>, <span class="st">"maroon"</span>))</span>
-<span id="cb25-668"><a href="#cb25-668" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb25-669"><a href="#cb25-669" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-670"><a href="#cb25-670" aria-hidden="true" tabindex="-1"></a><span class="fu">### Negative/Positive choice:</span></span>
-<span id="cb25-671"><a href="#cb25-671" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-674"><a href="#cb25-674" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-675"><a href="#cb25-675" aria-hidden="true" tabindex="-1"></a>choice_tt <span class="ot">&lt;-</span> </span>
-<span id="cb25-676"><a href="#cb25-676" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t.test</span>(mc_scaled<span class="sc">$</span>Negative_Choice,mc_scaled<span class="sc">$</span>Positive_Choice,</span>
-<span id="cb25-677"><a href="#cb25-677" aria-hidden="true" tabindex="-1"></a>       <span class="at">paired =</span> T)</span>
-<span id="cb25-678"><a href="#cb25-678" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-679"><a href="#cb25-679" aria-hidden="true" tabindex="-1"></a>choice_tt <span class="sc">|&gt;</span> </span>
-<span id="cb25-680"><a href="#cb25-680" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-681"><a href="#cb25-681" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
-<span id="cb25-682"><a href="#cb25-682" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-683"><a href="#cb25-683" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
-<span id="cb25-684"><a href="#cb25-684" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-685"><a href="#cb25-685" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean Difference</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
-<span id="cb25-686"><a href="#cb25-686" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-687"><a href="#cb25-687" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
-<span id="cb25-688"><a href="#cb25-688" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-689"><a href="#cb25-689" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-690"><a href="#cb25-690" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-691"><a href="#cb25-691" aria-hidden="true" tabindex="-1"></a>     <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-692"><a href="#cb25-692" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-693"><a href="#cb25-693" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb25-694"><a href="#cb25-694" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-695"><a href="#cb25-695" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-696"><a href="#cb25-696" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-697"><a href="#cb25-697" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 11: Paired t-test showing participants chose significantally more positive items."</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-698"><a href="#cb25-698" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-699"><a href="#cb25-699" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-700"><a href="#cb25-700" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-701"><a href="#cb25-701" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb25-702"><a href="#cb25-702" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-705"><a href="#cb25-705" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-706"><a href="#cb25-706" aria-hidden="true" tabindex="-1"></a>mc_neg.mod <span class="ot">&lt;-</span> </span>
-<span id="cb25-707"><a href="#cb25-707" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lm</span>(<span class="at">data =</span> mc_scaled, Morbid_Curiosity_Overall <span class="sc">~</span> Negative_Choice) <span class="sc">|&gt;</span> </span>
-<span id="cb25-708"><a href="#cb25-708" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span>
-<span id="cb25-709"><a href="#cb25-709" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-710"><a href="#cb25-710" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab <span class="ot">&lt;-</span> </span>
-<span id="cb25-711"><a href="#cb25-711" aria-hidden="true" tabindex="-1"></a>  mc_neg.mod <span class="sc">|&gt;</span> </span>
-<span id="cb25-712"><a href="#cb25-712" aria-hidden="true" tabindex="-1"></a>  <span class="fu">huxreg</span>(<span class="at">error_pos =</span> <span class="st">"right"</span>,</span>
-<span id="cb25-713"><a href="#cb25-713" aria-hidden="true" tabindex="-1"></a>         <span class="at">statistics =</span> <span class="fu">c</span>(<span class="st">"N. obs."</span> <span class="ot">=</span> <span class="st">"nobs"</span>, </span>
-<span id="cb25-714"><a href="#cb25-714" aria-hidden="true" tabindex="-1"></a>      <span class="st">"R squared"</span> <span class="ot">=</span> <span class="st">"r.squared"</span>, <span class="st">"F statistic"</span> <span class="ot">=</span> <span class="st">"statistic"</span>,</span>
-<span id="cb25-715"><a href="#cb25-715" aria-hidden="true" tabindex="-1"></a>      <span class="st">"P value"</span> <span class="ot">=</span> <span class="st">"p.value"</span>),</span>
-<span id="cb25-716"><a href="#cb25-716" aria-hidden="true" tabindex="-1"></a>      <span class="at">bold_signif =</span> .<span class="dv">05</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-717"><a href="#cb25-717" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-718"><a href="#cb25-718" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 12: Model showing negative choice selection is accurately predicted by Morbid Curiosity Scale score"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-719"><a href="#cb25-719" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-720"><a href="#cb25-720" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>)</span>
+<span id="cb25-632"><a href="#cb25-632" aria-hidden="true" tabindex="-1"></a>mc_st_tab </span>
+<span id="cb25-633"><a href="#cb25-633" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb25-634"><a href="#cb25-634" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-635"><a href="#cb25-635" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-636"><a href="#cb25-636" aria-hidden="true" tabindex="-1"></a><span class="fu">## Negative &amp; Positive Choice</span></span>
+<span id="cb25-637"><a href="#cb25-637" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-638"><a href="#cb25-638" aria-hidden="true" tabindex="-1"></a><span class="in">```{r neg-pos-choice}</span></span>
+<span id="cb25-639"><a href="#cb25-639" aria-hidden="true" tabindex="-1"></a>mc_scaled <span class="sc">|&gt;</span></span>
+<span id="cb25-640"><a href="#cb25-640" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Positive_Choice, Negative_Choice) <span class="sc">|&gt;</span></span>
+<span id="cb25-641"><a href="#cb25-641" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_with</span>( <span class="sc">~</span> <span class="fu">gsub</span>(<span class="st">"_Choice"</span>, <span class="st">""</span>, .x, )) <span class="sc">|&gt;</span></span>
+<span id="cb25-642"><a href="#cb25-642" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">everything</span>(),</span>
+<span id="cb25-643"><a href="#cb25-643" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"Choice"</span>,</span>
+<span id="cb25-644"><a href="#cb25-644" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"Picked"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb25-645"><a href="#cb25-645" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Choice) <span class="sc">|&gt;</span></span>
+<span id="cb25-646"><a href="#cb25-646" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">M =</span> <span class="fu">mean</span>(Picked),</span>
+<span id="cb25-647"><a href="#cb25-647" aria-hidden="true" tabindex="-1"></a>            <span class="at">SE =</span> <span class="fu">se</span>(Picked)) <span class="sc">|&gt;</span></span>
+<span id="cb25-648"><a href="#cb25-648" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Choice, M)) <span class="sc">+</span></span>
+<span id="cb25-649"><a href="#cb25-649" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>(<span class="fu">aes</span>(</span>
+<span id="cb25-650"><a href="#cb25-650" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymin =</span> M <span class="sc">-</span> SE,</span>
+<span id="cb25-651"><a href="#cb25-651" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymax =</span> M <span class="sc">+</span> SE,</span>
+<span id="cb25-652"><a href="#cb25-652" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> Choice),</span>
+<span id="cb25-653"><a href="#cb25-653" aria-hidden="true" tabindex="-1"></a>    <span class="at">fatten =</span> <span class="dv">6</span>,</span>
+<span id="cb25-654"><a href="#cb25-654" aria-hidden="true" tabindex="-1"></a>    <span class="at">show.legend =</span> F) <span class="sc">+</span></span>
+<span id="cb25-655"><a href="#cb25-655" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">group =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb25-656"><a href="#cb25-656" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb25-657"><a href="#cb25-657" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">Choice"</span>,</span>
+<span id="cb25-658"><a href="#cb25-658" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Average</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb25-659"><a href="#cb25-659" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Average Choice of Stimuli Among Participants"</span>,</span>
+<span id="cb25-660"><a href="#cb25-660" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Fig 4: Results indicate that on average, participants chose significantally more positive choices than negative choices."</span>) <span class="sc">+</span></span>
+<span id="cb25-661"><a href="#cb25-661" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>),</span>
+<span id="cb25-662"><a href="#cb25-662" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb25-663"><a href="#cb25-663" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">12</span>),</span>
+<span id="cb25-664"><a href="#cb25-664" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> .<span class="dv">5</span>,</span>
+<span id="cb25-665"><a href="#cb25-665" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">face =</span> <span class="st">"italic"</span>)) <span class="sc">+</span></span>
+<span id="cb25-666"><a href="#cb25-666" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkgreen"</span>, <span class="st">"maroon"</span>))</span>
+<span id="cb25-667"><a href="#cb25-667" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-668"><a href="#cb25-668" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-669"><a href="#cb25-669" aria-hidden="true" tabindex="-1"></a><span class="fu">### Negative/Positive choice:</span></span>
+<span id="cb25-670"><a href="#cb25-670" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-673"><a href="#cb25-673" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-674"><a href="#cb25-674" aria-hidden="true" tabindex="-1"></a>choice_tt <span class="ot">&lt;-</span> </span>
+<span id="cb25-675"><a href="#cb25-675" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t.test</span>(mc_scaled<span class="sc">$</span>Negative_Choice,mc_scaled<span class="sc">$</span>Positive_Choice,</span>
+<span id="cb25-676"><a href="#cb25-676" aria-hidden="true" tabindex="-1"></a>       <span class="at">paired =</span> T)</span>
+<span id="cb25-677"><a href="#cb25-677" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-678"><a href="#cb25-678" aria-hidden="true" tabindex="-1"></a>choice_tt <span class="sc">|&gt;</span> </span>
+<span id="cb25-679"><a href="#cb25-679" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-680"><a href="#cb25-680" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb25-681"><a href="#cb25-681" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-682"><a href="#cb25-682" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
+<span id="cb25-683"><a href="#cb25-683" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-684"><a href="#cb25-684" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean Difference</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
+<span id="cb25-685"><a href="#cb25-685" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-686"><a href="#cb25-686" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
+<span id="cb25-687"><a href="#cb25-687" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-688"><a href="#cb25-688" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-689"><a href="#cb25-689" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-690"><a href="#cb25-690" aria-hidden="true" tabindex="-1"></a>     <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-691"><a href="#cb25-691" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-692"><a href="#cb25-692" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb25-693"><a href="#cb25-693" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-694"><a href="#cb25-694" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-695"><a href="#cb25-695" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-696"><a href="#cb25-696" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 11: Paired t-test showing participants chose significantally more positive items."</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-697"><a href="#cb25-697" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-698"><a href="#cb25-698" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-699"><a href="#cb25-699" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-700"><a href="#cb25-700" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-701"><a href="#cb25-701" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-704"><a href="#cb25-704" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-705"><a href="#cb25-705" aria-hidden="true" tabindex="-1"></a>mc_neg.mod <span class="ot">&lt;-</span> </span>
+<span id="cb25-706"><a href="#cb25-706" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lm</span>(<span class="at">data =</span> mc_scaled, Morbid_Curiosity_Overall <span class="sc">~</span> Negative_Choice) <span class="sc">|&gt;</span> </span>
+<span id="cb25-707"><a href="#cb25-707" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>()</span>
+<span id="cb25-708"><a href="#cb25-708" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-709"><a href="#cb25-709" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab <span class="ot">&lt;-</span> </span>
+<span id="cb25-710"><a href="#cb25-710" aria-hidden="true" tabindex="-1"></a>  mc_neg.mod <span class="sc">|&gt;</span> </span>
+<span id="cb25-711"><a href="#cb25-711" aria-hidden="true" tabindex="-1"></a>  <span class="fu">huxreg</span>(<span class="at">error_pos =</span> <span class="st">"right"</span>,</span>
+<span id="cb25-712"><a href="#cb25-712" aria-hidden="true" tabindex="-1"></a>         <span class="at">statistics =</span>  <span class="fu">c</span>(<span class="st">"R squared"</span> <span class="ot">=</span> <span class="st">"r.squared"</span>, <span class="st">"F statistic"</span> <span class="ot">=</span> <span class="st">"statistic"</span>,</span>
+<span id="cb25-713"><a href="#cb25-713" aria-hidden="true" tabindex="-1"></a>      <span class="st">"P value"</span> <span class="ot">=</span> <span class="st">"p.value"</span>), </span>
+<span id="cb25-714"><a href="#cb25-714" aria-hidden="true" tabindex="-1"></a>      <span class="at">bold_signif =</span> .<span class="dv">05</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-715"><a href="#cb25-715" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-716"><a href="#cb25-716" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 12: Model showing negative choice selection is accurately predicted by Morbid Curiosity Scale score"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-717"><a href="#cb25-717" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-718"><a href="#cb25-718" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>)</span>
+<span id="cb25-719"><a href="#cb25-719" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-720"><a href="#cb25-720" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab[<span class="dv">1</span>,<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"Model 3"</span></span>
 <span id="cb25-721"><a href="#cb25-721" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-722"><a href="#cb25-722" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab[<span class="dv">1</span>,<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"Model 3"</span></span>
+<span id="cb25-722"><a href="#cb25-722" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab[<span class="dv">2</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">"Morbid Curiosity"</span></span>
 <span id="cb25-723"><a href="#cb25-723" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-724"><a href="#cb25-724" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab[<span class="dv">2</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">"Morbid Curiosity"</span></span>
-<span id="cb25-725"><a href="#cb25-725" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-726"><a href="#cb25-726" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab <span class="sc">|&gt;</span> <span class="fu">set_align</span>(<span class="at">row =</span> <span class="dv">4</span>, <span class="at">col =</span> <span class="dv">2</span>, <span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-727"><a href="#cb25-727" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb25-728"><a href="#cb25-728" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-729"><a href="#cb25-729" aria-hidden="true" tabindex="-1"></a><span class="in">```{r mc-neg-choice}</span></span>
-<span id="cb25-730"><a href="#cb25-730" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
-<span id="cb25-731"><a href="#cb25-731" aria-hidden="true" tabindex="-1"></a>mcu_cln <span class="sc">|&gt;</span> </span>
-<span id="cb25-732"><a href="#cb25-732" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Morbid_Curiosity_Overall,Negative_Choice)) <span class="sc">+</span> </span>
-<span id="cb25-733"><a href="#cb25-733" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb25-734"><a href="#cb25-734" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb25-735"><a href="#cb25-735" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
-<span id="cb25-736"><a href="#cb25-736" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">Morbid Curiosity Score"</span>, </span>
-<span id="cb25-737"><a href="#cb25-737" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Negative Choices</span><span class="sc">\n</span><span class="st">"</span>,</span>
-<span id="cb25-738"><a href="#cb25-738" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Fig 5: Correlation between overall Morbid Curiosity and subsequent number of negative items picked:</span><span class="sc">\n</span><span class="st"> (r = .66, r2 = .43)"</span>) <span class="sc">+</span></span>
-<span id="cb25-739"><a href="#cb25-739" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb25-740"><a href="#cb25-740" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"italic"</span>,</span>
-<span id="cb25-741"><a href="#cb25-741" aria-hidden="true" tabindex="-1"></a>                                <span class="at">hjust =</span> .<span class="dv">5</span>),</span>
-<span id="cb25-742"><a href="#cb25-742" aria-hidden="true" tabindex="-1"></a>     <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>)</span>
-<span id="cb25-743"><a href="#cb25-743" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb25-744"><a href="#cb25-744" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb25-745"><a href="#cb25-745" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-724"><a href="#cb25-724" aria-hidden="true" tabindex="-1"></a>mc_neg.mod_tab</span>
+<span id="cb25-725"><a href="#cb25-725" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-726"><a href="#cb25-726" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-727"><a href="#cb25-727" aria-hidden="true" tabindex="-1"></a><span class="in">```{r mc-neg-choice}</span></span>
+<span id="cb25-728"><a href="#cb25-728" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb25-729"><a href="#cb25-729" aria-hidden="true" tabindex="-1"></a>mcu_cln <span class="sc">|&gt;</span> </span>
+<span id="cb25-730"><a href="#cb25-730" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(Morbid_Curiosity_Overall,Negative_Choice)) <span class="sc">+</span> </span>
+<span id="cb25-731"><a href="#cb25-731" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb25-732"><a href="#cb25-732" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb25-733"><a href="#cb25-733" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
+<span id="cb25-734"><a href="#cb25-734" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">Morbid Curiosity Score"</span>, </span>
+<span id="cb25-735"><a href="#cb25-735" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Negative Choices</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb25-736"><a href="#cb25-736" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Fig 5: Correlation between overall Morbid Curiosity and subsequent number of negative items picked:</span><span class="sc">\n</span><span class="st"> (r = .66, r2 = .43)"</span>) <span class="sc">+</span></span>
+<span id="cb25-737"><a href="#cb25-737" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb25-738"><a href="#cb25-738" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"italic"</span>,</span>
+<span id="cb25-739"><a href="#cb25-739" aria-hidden="true" tabindex="-1"></a>                                <span class="at">hjust =</span> .<span class="dv">5</span>),</span>
+<span id="cb25-740"><a href="#cb25-740" aria-hidden="true" tabindex="-1"></a>     <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"black"</span>)</span>
+<span id="cb25-741"><a href="#cb25-741" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb25-742"><a href="#cb25-742" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb25-743"><a href="#cb25-743" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-744"><a href="#cb25-744" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-745"><a href="#cb25-745" aria-hidden="true" tabindex="-1"></a><span class="fu">## Morbid Curiosity and Gender</span></span>
 <span id="cb25-746"><a href="#cb25-746" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-747"><a href="#cb25-747" aria-hidden="true" tabindex="-1"></a><span class="fu">## Morbid Curiosity and Gender</span></span>
-<span id="cb25-748"><a href="#cb25-748" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-751"><a href="#cb25-751" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-752"><a href="#cb25-752" aria-hidden="true" tabindex="-1"></a><span class="co"># Separate Gender and MC</span></span>
-<span id="cb25-753"><a href="#cb25-753" aria-hidden="true" tabindex="-1"></a>gen_tt <span class="ot">&lt;-</span> </span>
-<span id="cb25-754"><a href="#cb25-754" aria-hidden="true" tabindex="-1"></a>  mcu_cln <span class="sc">%&gt;%</span> </span>
-<span id="cb25-755"><a href="#cb25-755" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Gender,Morbid_Curiosity_Overall) <span class="sc">%&gt;%</span> </span>
-<span id="cb25-756"><a href="#cb25-756" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Gender <span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-757"><a href="#cb25-757" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Gender =</span> </span>
-<span id="cb25-758"><a href="#cb25-758" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ifelse</span>(Gender <span class="sc">==</span> <span class="dv">1</span>,<span class="st">"Male"</span>,<span class="st">"Female"</span>))</span>
-<span id="cb25-759"><a href="#cb25-759" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-760"><a href="#cb25-760" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(gen_tt<span class="sc">$</span>Morbid_Curiosity_Overall<span class="sc">~</span>gen_tt<span class="sc">$</span>Gender) <span class="sc">|&gt;</span> </span>
-<span id="cb25-761"><a href="#cb25-761" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-762"><a href="#cb25-762" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
-<span id="cb25-763"><a href="#cb25-763" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-764"><a href="#cb25-764" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
-<span id="cb25-765"><a href="#cb25-765" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-766"><a href="#cb25-766" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean Difference</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
-<span id="cb25-767"><a href="#cb25-767" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-768"><a href="#cb25-768" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high,</span>
-<span id="cb25-769"><a href="#cb25-769" aria-hidden="true" tabindex="-1"></a>    <span class="at">Female =</span> estimate1,</span>
-<span id="cb25-770"><a href="#cb25-770" aria-hidden="true" tabindex="-1"></a>    <span class="at">Male =</span> estimate2</span>
-<span id="cb25-771"><a href="#cb25-771" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-772"><a href="#cb25-772" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-773"><a href="#cb25-773" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-774"><a href="#cb25-774" aria-hidden="true" tabindex="-1"></a>     <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-775"><a href="#cb25-775" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-776"><a href="#cb25-776" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb25-777"><a href="#cb25-777" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-778"><a href="#cb25-778" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-779"><a href="#cb25-779" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-780"><a href="#cb25-780" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 12: Independent t-test shows no significant difference between scores on Morbid Curiosity Scale."</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-781"><a href="#cb25-781" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-782"><a href="#cb25-782" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-783"><a href="#cb25-783" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-749"><a href="#cb25-749" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-750"><a href="#cb25-750" aria-hidden="true" tabindex="-1"></a><span class="co"># Separate Gender and MC</span></span>
+<span id="cb25-751"><a href="#cb25-751" aria-hidden="true" tabindex="-1"></a>gen_tt <span class="ot">&lt;-</span> </span>
+<span id="cb25-752"><a href="#cb25-752" aria-hidden="true" tabindex="-1"></a>  mcu_cln <span class="sc">%&gt;%</span> </span>
+<span id="cb25-753"><a href="#cb25-753" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Gender,Morbid_Curiosity_Overall) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-754"><a href="#cb25-754" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Gender <span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-755"><a href="#cb25-755" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Gender =</span> </span>
+<span id="cb25-756"><a href="#cb25-756" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ifelse</span>(Gender <span class="sc">==</span> <span class="dv">1</span>,<span class="st">"Male"</span>,<span class="st">"Female"</span>))</span>
+<span id="cb25-757"><a href="#cb25-757" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-758"><a href="#cb25-758" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(gen_tt<span class="sc">$</span>Morbid_Curiosity_Overall<span class="sc">~</span>gen_tt<span class="sc">$</span>Gender) <span class="sc">|&gt;</span> </span>
+<span id="cb25-759"><a href="#cb25-759" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-760"><a href="#cb25-760" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb25-761"><a href="#cb25-761" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-762"><a href="#cb25-762" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
+<span id="cb25-763"><a href="#cb25-763" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-764"><a href="#cb25-764" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean Difference</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
+<span id="cb25-765"><a href="#cb25-765" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-766"><a href="#cb25-766" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high,</span>
+<span id="cb25-767"><a href="#cb25-767" aria-hidden="true" tabindex="-1"></a>    <span class="at">Female =</span> estimate1,</span>
+<span id="cb25-768"><a href="#cb25-768" aria-hidden="true" tabindex="-1"></a>    <span class="at">Male =</span> estimate2</span>
+<span id="cb25-769"><a href="#cb25-769" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-770"><a href="#cb25-770" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-771"><a href="#cb25-771" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-772"><a href="#cb25-772" aria-hidden="true" tabindex="-1"></a>     <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-773"><a href="#cb25-773" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-774"><a href="#cb25-774" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb25-775"><a href="#cb25-775" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-776"><a href="#cb25-776" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-777"><a href="#cb25-777" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-778"><a href="#cb25-778" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 12: Independent t-test shows no significant difference between scores on Morbid Curiosity Scale."</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-779"><a href="#cb25-779" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-780"><a href="#cb25-780" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-781"><a href="#cb25-781" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-782"><a href="#cb25-782" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-783"><a href="#cb25-783" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb25-784"><a href="#cb25-784" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-785"><a href="#cb25-785" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-785"><a href="#cb25-785" aria-hidden="true" tabindex="-1"></a><span class="fu">## Horror Typology and Gender</span></span>
 <span id="cb25-786"><a href="#cb25-786" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-787"><a href="#cb25-787" aria-hidden="true" tabindex="-1"></a><span class="fu">## Horror Typology and Gender</span></span>
-<span id="cb25-788"><a href="#cb25-788" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-791"><a href="#cb25-791" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-792"><a href="#cb25-792" aria-hidden="true" tabindex="-1"></a>genht_tt <span class="ot">&lt;-</span> </span>
-<span id="cb25-793"><a href="#cb25-793" aria-hidden="true" tabindex="-1"></a>  mcu_cln <span class="sc">%&gt;%</span> </span>
-<span id="cb25-794"><a href="#cb25-794" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Gender,Horror_Typology_Overall) <span class="sc">%&gt;%</span> </span>
-<span id="cb25-795"><a href="#cb25-795" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Gender <span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-796"><a href="#cb25-796" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Gender =</span> </span>
-<span id="cb25-797"><a href="#cb25-797" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ifelse</span>(Gender <span class="sc">==</span> <span class="dv">1</span>,<span class="st">"Male"</span>,<span class="st">"Female"</span>)) </span>
-<span id="cb25-798"><a href="#cb25-798" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-799"><a href="#cb25-799" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(genht_tt<span class="sc">$</span>Horror_Typology_Overall<span class="sc">~</span>genht_tt<span class="sc">$</span>Gender) <span class="sc">|&gt;</span> </span>
-<span id="cb25-800"><a href="#cb25-800" aria-hidden="true" tabindex="-1"></a>  broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-801"><a href="#cb25-801" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
-<span id="cb25-802"><a href="#cb25-802" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-803"><a href="#cb25-803" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
-<span id="cb25-804"><a href="#cb25-804" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-805"><a href="#cb25-805" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean Difference</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
-<span id="cb25-806"><a href="#cb25-806" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-807"><a href="#cb25-807" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high,</span>
-<span id="cb25-808"><a href="#cb25-808" aria-hidden="true" tabindex="-1"></a>    <span class="at">Female =</span> estimate1,</span>
-<span id="cb25-809"><a href="#cb25-809" aria-hidden="true" tabindex="-1"></a>    <span class="at">Male =</span> estimate2</span>
-<span id="cb25-810"><a href="#cb25-810" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-811"><a href="#cb25-811" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-812"><a href="#cb25-812" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-813"><a href="#cb25-813" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-814"><a href="#cb25-814" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-815"><a href="#cb25-815" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb25-816"><a href="#cb25-816" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-817"><a href="#cb25-817" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-818"><a href="#cb25-818" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-819"><a href="#cb25-819" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 13: Independent t-test shows no significant difference between scores on Horror Typology Scale."</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-820"><a href="#cb25-820" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-821"><a href="#cb25-821" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-822"><a href="#cb25-822" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-823"><a href="#cb25-823" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-789"><a href="#cb25-789" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-790"><a href="#cb25-790" aria-hidden="true" tabindex="-1"></a>genht_tt <span class="ot">&lt;-</span> </span>
+<span id="cb25-791"><a href="#cb25-791" aria-hidden="true" tabindex="-1"></a>  mcu_cln <span class="sc">%&gt;%</span> </span>
+<span id="cb25-792"><a href="#cb25-792" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Gender,Horror_Typology_Overall) <span class="sc">%&gt;%</span> </span>
+<span id="cb25-793"><a href="#cb25-793" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Gender <span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-794"><a href="#cb25-794" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Gender =</span> </span>
+<span id="cb25-795"><a href="#cb25-795" aria-hidden="true" tabindex="-1"></a>           <span class="fu">ifelse</span>(Gender <span class="sc">==</span> <span class="dv">1</span>,<span class="st">"Male"</span>,<span class="st">"Female"</span>)) </span>
+<span id="cb25-796"><a href="#cb25-796" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-797"><a href="#cb25-797" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(genht_tt<span class="sc">$</span>Horror_Typology_Overall<span class="sc">~</span>genht_tt<span class="sc">$</span>Gender) <span class="sc">|&gt;</span> </span>
+<span id="cb25-798"><a href="#cb25-798" aria-hidden="true" tabindex="-1"></a>  broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-799"><a href="#cb25-799" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb25-800"><a href="#cb25-800" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-801"><a href="#cb25-801" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
+<span id="cb25-802"><a href="#cb25-802" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-803"><a href="#cb25-803" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean Difference</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
+<span id="cb25-804"><a href="#cb25-804" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-805"><a href="#cb25-805" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high,</span>
+<span id="cb25-806"><a href="#cb25-806" aria-hidden="true" tabindex="-1"></a>    <span class="at">Female =</span> estimate1,</span>
+<span id="cb25-807"><a href="#cb25-807" aria-hidden="true" tabindex="-1"></a>    <span class="at">Male =</span> estimate2</span>
+<span id="cb25-808"><a href="#cb25-808" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-809"><a href="#cb25-809" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-810"><a href="#cb25-810" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-811"><a href="#cb25-811" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-812"><a href="#cb25-812" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-813"><a href="#cb25-813" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb25-814"><a href="#cb25-814" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-815"><a href="#cb25-815" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-816"><a href="#cb25-816" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-817"><a href="#cb25-817" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 13: Independent t-test shows no significant difference between scores on Horror Typology Scale."</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-818"><a href="#cb25-818" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-819"><a href="#cb25-819" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-820"><a href="#cb25-820" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-821"><a href="#cb25-821" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-822"><a href="#cb25-822" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-823"><a href="#cb25-823" aria-hidden="true" tabindex="-1"></a><span class="fu">## General Questions:</span></span>
 <span id="cb25-824"><a href="#cb25-824" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-825"><a href="#cb25-825" aria-hidden="true" tabindex="-1"></a><span class="fu">## General Questions:</span></span>
+<span id="cb25-825"><a href="#cb25-825" aria-hidden="true" tabindex="-1"></a>I consider myself to be morbidly curious.</span>
 <span id="cb25-826"><a href="#cb25-826" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-827"><a href="#cb25-827" aria-hidden="true" tabindex="-1"></a>I consider myself to be morbidly curious.</span>
-<span id="cb25-828"><a href="#cb25-828" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-831"><a href="#cb25-831" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-832"><a href="#cb25-832" aria-hidden="true" tabindex="-1"></a>gen_quest <span class="ot">&lt;-</span> </span>
-<span id="cb25-833"><a href="#cb25-833" aria-hidden="true" tabindex="-1"></a>  mcu_cln <span class="sc">|&gt;</span> </span>
-<span id="cb25-834"><a href="#cb25-834" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-835"><a href="#cb25-835" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
-<span id="cb25-836"><a href="#cb25-836" aria-hidden="true" tabindex="-1"></a>    <span class="at">people_mc =</span> a_d1, </span>
-<span id="cb25-837"><a href="#cb25-837" aria-hidden="true" tabindex="-1"></a>    <span class="at">self_mc =</span> a_d2, </span>
-<span id="cb25-838"><a href="#cb25-838" aria-hidden="true" tabindex="-1"></a>    <span class="at">self_anx =</span> a_d3,</span>
-<span id="cb25-839"><a href="#cb25-839" aria-hidden="true" tabindex="-1"></a>    <span class="at">self_hor =</span> a_d4</span>
-<span id="cb25-840"><a href="#cb25-840" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-841"><a href="#cb25-841" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_at</span>(<span class="fu">vars</span>(people_mc<span class="sc">:</span>self_hor),as.numeric)</span>
-<span id="cb25-842"><a href="#cb25-842" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-843"><a href="#cb25-843" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(gen_quest<span class="sc">$</span>self_mc,gen_quest<span class="sc">$</span>morbid_curiosity_overall) <span class="sc">|&gt;</span> </span>
-<span id="cb25-844"><a href="#cb25-844" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-845"><a href="#cb25-845" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
-<span id="cb25-846"><a href="#cb25-846" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-847"><a href="#cb25-847" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
-<span id="cb25-848"><a href="#cb25-848" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-849"><a href="#cb25-849" aria-hidden="true" tabindex="-1"></a>    <span class="at">r =</span> estimate,</span>
-<span id="cb25-850"><a href="#cb25-850" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-851"><a href="#cb25-851" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
-<span id="cb25-852"><a href="#cb25-852" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-853"><a href="#cb25-853" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-854"><a href="#cb25-854" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-855"><a href="#cb25-855" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-856"><a href="#cb25-856" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-857"><a href="#cb25-857" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb25-858"><a href="#cb25-858" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-859"><a href="#cb25-859" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-860"><a href="#cb25-860" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-861"><a href="#cb25-861" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 14: Participants self rating of being morbidly curious was significantlly positivly correlated with morbid curiosity score"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-862"><a href="#cb25-862" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-863"><a href="#cb25-863" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-864"><a href="#cb25-864" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-865"><a href="#cb25-865" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-829"><a href="#cb25-829" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-830"><a href="#cb25-830" aria-hidden="true" tabindex="-1"></a>gen_quest <span class="ot">&lt;-</span> </span>
+<span id="cb25-831"><a href="#cb25-831" aria-hidden="true" tabindex="-1"></a>  mcu_cln <span class="sc">|&gt;</span> </span>
+<span id="cb25-832"><a href="#cb25-832" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-833"><a href="#cb25-833" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb25-834"><a href="#cb25-834" aria-hidden="true" tabindex="-1"></a>    <span class="at">people_mc =</span> a_d1, </span>
+<span id="cb25-835"><a href="#cb25-835" aria-hidden="true" tabindex="-1"></a>    <span class="at">self_mc =</span> a_d2, </span>
+<span id="cb25-836"><a href="#cb25-836" aria-hidden="true" tabindex="-1"></a>    <span class="at">self_anx =</span> a_d3,</span>
+<span id="cb25-837"><a href="#cb25-837" aria-hidden="true" tabindex="-1"></a>    <span class="at">self_hor =</span> a_d4</span>
+<span id="cb25-838"><a href="#cb25-838" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-839"><a href="#cb25-839" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_at</span>(<span class="fu">vars</span>(people_mc<span class="sc">:</span>self_hor),as.numeric)</span>
+<span id="cb25-840"><a href="#cb25-840" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-841"><a href="#cb25-841" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(gen_quest<span class="sc">$</span>self_mc,gen_quest<span class="sc">$</span>morbid_curiosity_overall) <span class="sc">|&gt;</span> </span>
+<span id="cb25-842"><a href="#cb25-842" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-843"><a href="#cb25-843" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb25-844"><a href="#cb25-844" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-845"><a href="#cb25-845" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
+<span id="cb25-846"><a href="#cb25-846" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-847"><a href="#cb25-847" aria-hidden="true" tabindex="-1"></a>    <span class="at">r =</span> estimate,</span>
+<span id="cb25-848"><a href="#cb25-848" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-849"><a href="#cb25-849" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
+<span id="cb25-850"><a href="#cb25-850" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-851"><a href="#cb25-851" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-852"><a href="#cb25-852" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-853"><a href="#cb25-853" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-854"><a href="#cb25-854" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-855"><a href="#cb25-855" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb25-856"><a href="#cb25-856" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-857"><a href="#cb25-857" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-858"><a href="#cb25-858" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-859"><a href="#cb25-859" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 14: Participants self rating of being morbidly curious was significantlly positivly correlated with morbid curiosity score"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-860"><a href="#cb25-860" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-861"><a href="#cb25-861" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-862"><a href="#cb25-862" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-863"><a href="#cb25-863" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-864"><a href="#cb25-864" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-865"><a href="#cb25-865" aria-hidden="true" tabindex="-1"></a>I consider myself to enjoy horror related content such Books, TV shows, Movies, Attractions, Podcast, etc.</span>
 <span id="cb25-866"><a href="#cb25-866" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-867"><a href="#cb25-867" aria-hidden="true" tabindex="-1"></a>I consider myself to enjoy horror related content such Books, TV shows, Movies, Attractions, Podcast, etc.</span>
-<span id="cb25-868"><a href="#cb25-868" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-871"><a href="#cb25-871" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-872"><a href="#cb25-872" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(gen_quest<span class="sc">$</span>self_hor,gen_quest<span class="sc">$</span>horror_typology_overall) <span class="sc">|&gt;</span> </span>
-<span id="cb25-873"><a href="#cb25-873" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
-<span id="cb25-874"><a href="#cb25-874" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
-<span id="cb25-875"><a href="#cb25-875" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-876"><a href="#cb25-876" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
-<span id="cb25-877"><a href="#cb25-877" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-878"><a href="#cb25-878" aria-hidden="true" tabindex="-1"></a>    <span class="at">r =</span> estimate,</span>
-<span id="cb25-879"><a href="#cb25-879" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-880"><a href="#cb25-880" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
-<span id="cb25-881"><a href="#cb25-881" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-882"><a href="#cb25-882" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-883"><a href="#cb25-883" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-884"><a href="#cb25-884" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-885"><a href="#cb25-885" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-886"><a href="#cb25-886" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb25-887"><a href="#cb25-887" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-888"><a href="#cb25-888" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-889"><a href="#cb25-889" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-890"><a href="#cb25-890" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 15: Participants self rating of enjoying the horror genre was significantlly positivly correlated with horror typology score"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-891"><a href="#cb25-891" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-892"><a href="#cb25-892" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-893"><a href="#cb25-893" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-894"><a href="#cb25-894" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-869"><a href="#cb25-869" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-870"><a href="#cb25-870" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(gen_quest<span class="sc">$</span>self_hor,gen_quest<span class="sc">$</span>horror_typology_overall) <span class="sc">|&gt;</span> </span>
+<span id="cb25-871"><a href="#cb25-871" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy</span>() <span class="sc">|&gt;</span></span>
+<span id="cb25-872"><a href="#cb25-872" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb25-873"><a href="#cb25-873" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-874"><a href="#cb25-874" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
+<span id="cb25-875"><a href="#cb25-875" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-876"><a href="#cb25-876" aria-hidden="true" tabindex="-1"></a>    <span class="at">r =</span> estimate,</span>
+<span id="cb25-877"><a href="#cb25-877" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-878"><a href="#cb25-878" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
+<span id="cb25-879"><a href="#cb25-879" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-880"><a href="#cb25-880" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-881"><a href="#cb25-881" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-882"><a href="#cb25-882" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-883"><a href="#cb25-883" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-884"><a href="#cb25-884" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb25-885"><a href="#cb25-885" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-886"><a href="#cb25-886" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-887"><a href="#cb25-887" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-888"><a href="#cb25-888" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 15: Participants self rating of enjoying the horror genre was significantlly positivly correlated with horror typology score"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-889"><a href="#cb25-889" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-890"><a href="#cb25-890" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-891"><a href="#cb25-891" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-892"><a href="#cb25-892" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-893"><a href="#cb25-893" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-894"><a href="#cb25-894" aria-hidden="true" tabindex="-1"></a>I consider myself to be an anxious person.</span>
 <span id="cb25-895"><a href="#cb25-895" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-896"><a href="#cb25-896" aria-hidden="true" tabindex="-1"></a>I consider myself to be an anxious person.</span>
-<span id="cb25-897"><a href="#cb25-897" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-900"><a href="#cb25-900" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-901"><a href="#cb25-901" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(gen_quest<span class="sc">$</span>self_anx, gen_quest<span class="sc">$</span>trait) <span class="sc">|&gt;</span> </span>
-<span id="cb25-902"><a href="#cb25-902" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy</span>() <span class="sc">|&gt;</span>   </span>
-<span id="cb25-903"><a href="#cb25-903" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
-<span id="cb25-904"><a href="#cb25-904" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-905"><a href="#cb25-905" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
-<span id="cb25-906"><a href="#cb25-906" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-907"><a href="#cb25-907" aria-hidden="true" tabindex="-1"></a>    <span class="at">r =</span> estimate,</span>
-<span id="cb25-908"><a href="#cb25-908" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-909"><a href="#cb25-909" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
-<span id="cb25-910"><a href="#cb25-910" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-911"><a href="#cb25-911" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-912"><a href="#cb25-912" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-913"><a href="#cb25-913" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-914"><a href="#cb25-914" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-915"><a href="#cb25-915" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb25-916"><a href="#cb25-916" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-917"><a href="#cb25-917" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-918"><a href="#cb25-918" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-919"><a href="#cb25-919" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 16: Participants self rating of anxiety was significantly positively correlated with the trait measure of anxiety."</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-920"><a href="#cb25-920" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
-<span id="cb25-921"><a href="#cb25-921" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-922"><a href="#cb25-922" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-923"><a href="#cb25-923" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-898"><a href="#cb25-898" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-899"><a href="#cb25-899" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(gen_quest<span class="sc">$</span>self_anx, gen_quest<span class="sc">$</span>trait) <span class="sc">|&gt;</span> </span>
+<span id="cb25-900"><a href="#cb25-900" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy</span>() <span class="sc">|&gt;</span>   </span>
+<span id="cb25-901"><a href="#cb25-901" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb25-902"><a href="#cb25-902" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-903"><a href="#cb25-903" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
+<span id="cb25-904"><a href="#cb25-904" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-905"><a href="#cb25-905" aria-hidden="true" tabindex="-1"></a>    <span class="at">r =</span> estimate,</span>
+<span id="cb25-906"><a href="#cb25-906" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-907"><a href="#cb25-907" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
+<span id="cb25-908"><a href="#cb25-908" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-909"><a href="#cb25-909" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-910"><a href="#cb25-910" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-911"><a href="#cb25-911" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"Two-sided"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-912"><a href="#cb25-912" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-913"><a href="#cb25-913" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb25-914"><a href="#cb25-914" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-915"><a href="#cb25-915" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-916"><a href="#cb25-916" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-917"><a href="#cb25-917" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 16: Participants self rating of anxiety was significantly positively correlated with the trait measure of anxiety."</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-918"><a href="#cb25-918" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>)<span class="sc">|&gt;</span> </span>
+<span id="cb25-919"><a href="#cb25-919" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-920"><a href="#cb25-920" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-921"><a href="#cb25-921" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-922"><a href="#cb25-922" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-923"><a href="#cb25-923" aria-hidden="true" tabindex="-1"></a>I find people to be morbidly curious.</span>
 <span id="cb25-924"><a href="#cb25-924" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-925"><a href="#cb25-925" aria-hidden="true" tabindex="-1"></a>I find people to be morbidly curious.</span>
-<span id="cb25-926"><a href="#cb25-926" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-929"><a href="#cb25-929" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-930"><a href="#cb25-930" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(gen_quest<span class="sc">$</span>people_mc, <span class="at">mu =</span> <span class="dv">4</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-931"><a href="#cb25-931" aria-hidden="true" tabindex="-1"></a>    broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-932"><a href="#cb25-932" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
-<span id="cb25-933"><a href="#cb25-933" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
-<span id="cb25-934"><a href="#cb25-934" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
-<span id="cb25-935"><a href="#cb25-935" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
-<span id="cb25-936"><a href="#cb25-936" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
-<span id="cb25-937"><a href="#cb25-937" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
-<span id="cb25-938"><a href="#cb25-938" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
-<span id="cb25-939"><a href="#cb25-939" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb25-940"><a href="#cb25-940" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-941"><a href="#cb25-941" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
-<span id="cb25-942"><a href="#cb25-942" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"One-Tailed"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-943"><a href="#cb25-943" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
-<span id="cb25-944"><a href="#cb25-944" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb25-945"><a href="#cb25-945" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
-<span id="cb25-946"><a href="#cb25-946" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-947"><a href="#cb25-947" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-948"><a href="#cb25-948" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 17: Single-sample t-test against the midpoint of 4 showed that people generally believe others to be morbidly curious."</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-949"><a href="#cb25-949" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-950"><a href="#cb25-950" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-951"><a href="#cb25-951" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
-<span id="cb25-952"><a href="#cb25-952" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-927"><a href="#cb25-927" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-928"><a href="#cb25-928" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(gen_quest<span class="sc">$</span>people_mc, <span class="at">mu =</span> <span class="dv">4</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-929"><a href="#cb25-929" aria-hidden="true" tabindex="-1"></a>    broom<span class="sc">::</span><span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-930"><a href="#cb25-930" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(</span>
+<span id="cb25-931"><a href="#cb25-931" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic,</span>
+<span id="cb25-932"><a href="#cb25-932" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value, </span>
+<span id="cb25-933"><a href="#cb25-933" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter,</span>
+<span id="cb25-934"><a href="#cb25-934" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Mean</span><span class="st">`</span> <span class="ot">=</span> estimate,</span>
+<span id="cb25-935"><a href="#cb25-935" aria-hidden="true" tabindex="-1"></a>    <span class="at">Lower =</span> conf.low,</span>
+<span id="cb25-936"><a href="#cb25-936" aria-hidden="true" tabindex="-1"></a>    <span class="at">Upper =</span> conf.high</span>
+<span id="cb25-937"><a href="#cb25-937" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb25-938"><a href="#cb25-938" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-939"><a href="#cb25-939" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">[LL, UL]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,<span class="fu">round</span>(Lower,<span class="dv">2</span>),<span class="st">","</span>,<span class="fu">round</span>(Upper,<span class="dv">2</span>),<span class="st">"]"</span>),</span>
+<span id="cb25-940"><a href="#cb25-940" aria-hidden="true" tabindex="-1"></a>    <span class="at">alternative =</span> <span class="st">"One-Tailed"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-941"><a href="#cb25-941" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Lower, <span class="sc">-</span>Upper, <span class="sc">-</span>method) <span class="sc">|&gt;</span> </span>
+<span id="cb25-942"><a href="#cb25-942" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(alternative, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb25-943"><a href="#cb25-943" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> df) <span class="sc">|&gt;</span> </span>
+<span id="cb25-944"><a href="#cb25-944" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-945"><a href="#cb25-945" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-946"><a href="#cb25-946" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 17: Single-sample t-test against the midpoint of 4 showed that people generally believe others to be morbidly curious."</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-947"><a href="#cb25-947" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption_pos</span>(<span class="st">"bottom"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-948"><a href="#cb25-948" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-949"><a href="#cb25-949" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">value =</span> <span class="st">"center"</span>)</span>
+<span id="cb25-950"><a href="#cb25-950" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-951"><a href="#cb25-951" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-952"><a href="#cb25-952" aria-hidden="true" tabindex="-1"></a><span class="fu">## Descriptive Statistics of All Variables</span></span>
 <span id="cb25-953"><a href="#cb25-953" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-954"><a href="#cb25-954" aria-hidden="true" tabindex="-1"></a><span class="fu">## Descriptive Statistics of All Variables</span></span>
-<span id="cb25-955"><a href="#cb25-955" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-958"><a href="#cb25-958" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb25-959"><a href="#cb25-959" aria-hidden="true" tabindex="-1"></a>gen_quest <span class="sc">|&gt;</span> </span>
-<span id="cb25-960"><a href="#cb25-960" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age,self_mc<span class="sc">:</span>trait_questionnaire_20,</span>
-<span id="cb25-961"><a href="#cb25-961" aria-hidden="true" tabindex="-1"></a>         post_state_1<span class="sc">:</span>post_state_20,</span>
-<span id="cb25-962"><a href="#cb25-962" aria-hidden="true" tabindex="-1"></a>         morbid_curiosity_overall<span class="sc">:</span>state_post,<span class="sc">-</span>pn_choice) <span class="sc">|&gt;</span></span>
-<span id="cb25-963"><a href="#cb25-963" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_all</span>(as.numeric) <span class="sc">|&gt;</span> </span>
-<span id="cb25-964"><a href="#cb25-964" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_at</span>(<span class="fu">vars</span>(<span class="fu">starts_with</span>(<span class="st">"state_"</span>)),<span class="sc">~</span><span class="fu">gsub</span>(<span class="st">"questionnaire_"</span>,<span class="st">""</span>,.x)) <span class="sc">|&gt;</span> </span>
-<span id="cb25-965"><a href="#cb25-965" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_at</span>(<span class="fu">vars</span>(<span class="fu">starts_with</span>(<span class="st">"trait_"</span>)),<span class="sc">~</span><span class="fu">gsub</span>(<span class="st">"questionnaire_"</span>,<span class="st">""</span>,.x)) <span class="sc">|&gt;</span> </span>
-<span id="cb25-966"><a href="#cb25-966" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(state_pre, <span class="at">.before =</span> trait) <span class="sc">|&gt;</span> </span>
-<span id="cb25-967"><a href="#cb25-967" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(state_post, <span class="at">.before =</span> trait) <span class="sc">|&gt;</span> </span>
-<span id="cb25-968"><a href="#cb25-968" aria-hidden="true" tabindex="-1"></a>  <span class="fu">skim</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-969"><a href="#cb25-969" aria-hidden="true" tabindex="-1"></a>  <span class="fu">yank</span>(<span class="st">"numeric"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-970"><a href="#cb25-970" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"p"</span>), </span>
-<span id="cb25-971"><a href="#cb25-971" aria-hidden="true" tabindex="-1"></a>         <span class="sc">-</span>n_missing, </span>
-<span id="cb25-972"><a href="#cb25-972" aria-hidden="true" tabindex="-1"></a>         <span class="sc">-</span>complete_rate) <span class="sc">|&gt;</span> </span>
-<span id="cb25-973"><a href="#cb25-973" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>( </span>
-<span id="cb25-974"><a href="#cb25-974" aria-hidden="true" tabindex="-1"></a>    <span class="at">variable =</span> skim_variable,</span>
-<span id="cb25-975"><a href="#cb25-975" aria-hidden="true" tabindex="-1"></a>    <span class="at">M =</span> mean, </span>
-<span id="cb25-976"><a href="#cb25-976" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> sd</span>
-<span id="cb25-977"><a href="#cb25-977" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb25-978"><a href="#cb25-978" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb25-979"><a href="#cb25-979" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">M(SD)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="fu">round</span>(M,<span class="dv">2</span>),<span class="st">"("</span>,<span class="fu">round</span>(SD,<span class="dv">2</span>),<span class="st">")"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb25-980"><a href="#cb25-980" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>M,<span class="sc">-</span>SD) <span class="sc">|&gt;</span></span>
-<span id="cb25-981"><a href="#cb25-981" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(variable, <span class="st">`</span><span class="at">M(SD)</span><span class="st">`</span>, hist) <span class="sc">|&gt;</span> </span>
-<span id="cb25-982"><a href="#cb25-982" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-983"><a href="#cb25-983" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb25-984"><a href="#cb25-984" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-985"><a href="#cb25-985" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">col =</span> <span class="dv">3</span>, <span class="at">value =</span> <span class="st">"center"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb25-986"><a href="#cb25-986" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 18: Descriptive statistics of all numeric variables."</span>) <span class="ot">-&gt;</span> all_num</span>
-<span id="cb25-987"><a href="#cb25-987" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-988"><a href="#cb25-988" aria-hidden="true" tabindex="-1"></a>all_num[<span class="dv">1</span>,<span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="st">"Histogram"</span></span>
-<span id="cb25-989"><a href="#cb25-989" aria-hidden="true" tabindex="-1"></a>all_num[<span class="dv">1</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">"Variable"</span></span>
-<span id="cb25-990"><a href="#cb25-990" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-991"><a href="#cb25-991" aria-hidden="true" tabindex="-1"></a>all_num</span>
-<span id="cb25-992"><a href="#cb25-992" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb25-956"><a href="#cb25-956" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-957"><a href="#cb25-957" aria-hidden="true" tabindex="-1"></a>gen_quest <span class="sc">|&gt;</span> </span>
+<span id="cb25-958"><a href="#cb25-958" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(age,self_mc<span class="sc">:</span>trait_questionnaire_20,</span>
+<span id="cb25-959"><a href="#cb25-959" aria-hidden="true" tabindex="-1"></a>         post_state_1<span class="sc">:</span>post_state_20,</span>
+<span id="cb25-960"><a href="#cb25-960" aria-hidden="true" tabindex="-1"></a>         morbid_curiosity_overall<span class="sc">:</span>state_post,<span class="sc">-</span>pn_choice) <span class="sc">|&gt;</span></span>
+<span id="cb25-961"><a href="#cb25-961" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_all</span>(as.numeric) <span class="sc">|&gt;</span> </span>
+<span id="cb25-962"><a href="#cb25-962" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename_at</span>(<span class="fu">vars</span>(<span class="fu">starts_with</span>(<span class="st">"state_"</span>)),<span class="sc">~</span><span class="fu">gsub</span>(<span class="st">"questionnaire_"</span>,<span class="st">""</span>,.x)) <span class="sc">|&gt;</span> </span>
+<span id="cb25-963"><a href="#cb25-963" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename_at</span>(<span class="fu">vars</span>(<span class="fu">starts_with</span>(<span class="st">"trait_"</span>)),<span class="sc">~</span><span class="fu">gsub</span>(<span class="st">"questionnaire_"</span>,<span class="st">""</span>,.x)) <span class="sc">|&gt;</span> </span>
+<span id="cb25-964"><a href="#cb25-964" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(state_pre, <span class="at">.before =</span> trait) <span class="sc">|&gt;</span> </span>
+<span id="cb25-965"><a href="#cb25-965" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(state_post, <span class="at">.before =</span> trait) <span class="sc">|&gt;</span> </span>
+<span id="cb25-966"><a href="#cb25-966" aria-hidden="true" tabindex="-1"></a>  <span class="fu">skim</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-967"><a href="#cb25-967" aria-hidden="true" tabindex="-1"></a>  <span class="fu">yank</span>(<span class="st">"numeric"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-968"><a href="#cb25-968" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"p"</span>), </span>
+<span id="cb25-969"><a href="#cb25-969" aria-hidden="true" tabindex="-1"></a>         <span class="sc">-</span>n_missing, </span>
+<span id="cb25-970"><a href="#cb25-970" aria-hidden="true" tabindex="-1"></a>         <span class="sc">-</span>complete_rate) <span class="sc">|&gt;</span> </span>
+<span id="cb25-971"><a href="#cb25-971" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>( </span>
+<span id="cb25-972"><a href="#cb25-972" aria-hidden="true" tabindex="-1"></a>    <span class="at">variable =</span> skim_variable,</span>
+<span id="cb25-973"><a href="#cb25-973" aria-hidden="true" tabindex="-1"></a>    <span class="at">M =</span> mean, </span>
+<span id="cb25-974"><a href="#cb25-974" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> sd</span>
+<span id="cb25-975"><a href="#cb25-975" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb25-976"><a href="#cb25-976" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb25-977"><a href="#cb25-977" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">M(SD)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="fu">round</span>(M,<span class="dv">2</span>),<span class="st">"("</span>,<span class="fu">round</span>(SD,<span class="dv">2</span>),<span class="st">")"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb25-978"><a href="#cb25-978" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>M,<span class="sc">-</span>SD) <span class="sc">|&gt;</span></span>
+<span id="cb25-979"><a href="#cb25-979" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(variable, <span class="st">`</span><span class="at">M(SD)</span><span class="st">`</span>, hist) <span class="sc">|&gt;</span> </span>
+<span id="cb25-980"><a href="#cb25-980" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-981"><a href="#cb25-981" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb25-982"><a href="#cb25-982" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_width</span>(<span class="at">value =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-983"><a href="#cb25-983" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="at">col =</span> <span class="dv">3</span>, <span class="at">value =</span> <span class="st">"center"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb25-984"><a href="#cb25-984" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_caption</span>(<span class="st">"Table 18: Descriptive statistics of all numeric variables."</span>) <span class="ot">-&gt;</span> all_num</span>
+<span id="cb25-985"><a href="#cb25-985" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-986"><a href="#cb25-986" aria-hidden="true" tabindex="-1"></a>all_num[<span class="dv">1</span>,<span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="st">"Histogram"</span></span>
+<span id="cb25-987"><a href="#cb25-987" aria-hidden="true" tabindex="-1"></a>all_num[<span class="dv">1</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">"Variable"</span></span>
+<span id="cb25-988"><a href="#cb25-988" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-989"><a href="#cb25-989" aria-hidden="true" tabindex="-1"></a>all_num</span>
+<span id="cb25-990"><a href="#cb25-990" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
