@@ -673,14 +673,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span>,</span>
 <span>           width <span class="op">=</span> <span class="fl">.40</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_label</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">9</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_label</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">9</span>,</span>
+<span>             colour <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
 <span>    x <span class="op">=</span> <span class="st">"\nEmotion Category"</span>,</span>
 <span>    y <span class="op">=</span> <span class="st">""</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/lims.html">ylim</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">100</span><span class="op">)</span><span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span></span>
-<span>    legend.position <span class="op">=</span> <span class="st">"none"</span>,</span>
-<span>    axis.text.y <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op">(</span><span class="op">)</span></span>
+<span>    legend.position <span class="op">=</span> <span class="st">"none"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"darkgreen"</span>,<span class="st">"maroon"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
@@ -1725,178 +1726,179 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb19-253"><a href="#cb19-253" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>,</span>
 <span id="cb19-254"><a href="#cb19-254" aria-hidden="true" tabindex="-1"></a>           <span class="at">width =</span> .<span class="dv">40</span>) <span class="sc">+</span></span>
 <span id="cb19-255"><a href="#cb19-255" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb19-256"><a href="#cb19-256" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="at">size =</span> <span class="dv">9</span>) <span class="sc">+</span></span>
-<span id="cb19-257"><a href="#cb19-257" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb19-258"><a href="#cb19-258" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">Emotion Category"</span>,</span>
-<span id="cb19-259"><a href="#cb19-259" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span></span>
-<span id="cb19-260"><a href="#cb19-260" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb19-261"><a href="#cb19-261" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb19-262"><a href="#cb19-262" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
-<span id="cb19-263"><a href="#cb19-263" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_blank</span>()</span>
-<span id="cb19-264"><a href="#cb19-264" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb19-265"><a href="#cb19-265" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkgreen"</span>,<span class="st">"maroon"</span>))</span>
-<span id="cb19-266"><a href="#cb19-266" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-267"><a href="#cb19-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-268"><a href="#cb19-268" aria-hidden="true" tabindex="-1"></a><span class="fu">## Moral Perception</span></span>
-<span id="cb19-269"><a href="#cb19-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-270"><a href="#cb19-270" aria-hidden="true" tabindex="-1"></a>Participants were shown three questions relating to character judgments of a supposed Creepy individual. The three questions were averaged to create a composite score of moral character, with higher values suggesting bad moral character.</span>
-<span id="cb19-271"><a href="#cb19-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-274"><a href="#cb19-274" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb19-275"><a href="#cb19-275" aria-hidden="true" tabindex="-1"></a>mc <span class="ot">&lt;-</span> </span>
-<span id="cb19-276"><a href="#cb19-276" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
-<span id="cb19-277"><a href="#cb19-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">remove_labels</span>()</span>
-<span id="cb19-278"><a href="#cb19-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-279"><a href="#cb19-279" aria-hidden="true" tabindex="-1"></a><span class="co"># One Sample T-Test showing Creepy People are thought to possess 'bad' moral character</span></span>
-<span id="cb19-280"><a href="#cb19-280" aria-hidden="true" tabindex="-1"></a>mc <span class="sc">|&gt;</span> </span>
-<span id="cb19-281"><a href="#cb19-281" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb19-282"><a href="#cb19-282" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(bad_or_good<span class="sc">:</span>trustworthy_r) <span class="sc">|&gt;</span> </span>
-<span id="cb19-283"><a href="#cb19-283" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-284"><a href="#cb19-284" aria-hidden="true" tabindex="-1"></a>    <span class="at">character =</span> <span class="fu">mean</span>(<span class="fu">c_across</span>(bad_or_good<span class="sc">:</span>trustworthy_r))</span>
-<span id="cb19-285"><a href="#cb19-285" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-286"><a href="#cb19-286" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(character) <span class="sc">|&gt;</span> </span>
-<span id="cb19-287"><a href="#cb19-287" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb19-288"><a href="#cb19-288" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t.test</span>(<span class="at">mu =</span> <span class="dv">4</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb19-289"><a href="#cb19-289" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb19-290"><a href="#cb19-290" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
-<span id="cb19-291"><a href="#cb19-291" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean =</span> estimate,</span>
-<span id="cb19-292"><a href="#cb19-292" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic, </span>
-<span id="cb19-293"><a href="#cb19-293" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
-<span id="cb19-294"><a href="#cb19-294" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter</span>
-<span id="cb19-295"><a href="#cb19-295" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-296"><a href="#cb19-296" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-297"><a href="#cb19-297" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">CI[ll,uu]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,</span>
-<span id="cb19-298"><a href="#cb19-298" aria-hidden="true" tabindex="-1"></a>                         conf.low <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">0</span>),</span>
-<span id="cb19-299"><a href="#cb19-299" aria-hidden="true" tabindex="-1"></a>                         <span class="st">","</span>,conf.high <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">0</span>),</span>
-<span id="cb19-300"><a href="#cb19-300" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"]"</span>)</span>
-<span id="cb19-301"><a href="#cb19-301" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-302"><a href="#cb19-302" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>conf.low,<span class="sc">-</span>conf.high,<span class="sc">-</span>method,<span class="sc">-</span>alternative) <span class="sc">|&gt;</span> </span>
-<span id="cb19-303"><a href="#cb19-303" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
-<span id="cb19-304"><a href="#cb19-304" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb19-305"><a href="#cb19-305" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb19-306"><a href="#cb19-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="st">"center"</span>)</span>
-<span id="cb19-307"><a href="#cb19-307" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-308"><a href="#cb19-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-309"><a href="#cb19-309" aria-hidden="true" tabindex="-1"></a><span class="fu">## Face Ratings</span></span>
-<span id="cb19-310"><a href="#cb19-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-313"><a href="#cb19-313" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb19-314"><a href="#cb19-314" aria-hidden="true" tabindex="-1"></a>pics <span class="ot">&lt;-</span> </span>
-<span id="cb19-315"><a href="#cb19-315" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
-<span id="cb19-316"><a href="#cb19-316" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">matches</span>(<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_</span><span class="sc">\\</span><span class="st">d"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-317"><a href="#cb19-317" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
-<span id="cb19-318"><a href="#cb19-318" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_</span><span class="sc">\\</span><span class="st">d"</span>),</span>
-<span id="cb19-319"><a href="#cb19-319" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"ratings"</span></span>
-<span id="cb19-320"><a href="#cb19-320" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-321"><a href="#cb19-321" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-322"><a href="#cb19-322" aria-hidden="true" tabindex="-1"></a>    <span class="at">attribute =</span> </span>
-<span id="cb19-323"><a href="#cb19-323" aria-hidden="true" tabindex="-1"></a>      <span class="fu">case_when</span>(</span>
-<span id="cb19-324"><a href="#cb19-324" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_1"</span>) <span class="sc">~</span> <span class="st">"Attractiveness"</span>,</span>
-<span id="cb19-325"><a href="#cb19-325" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_2"</span>) <span class="sc">~</span> <span class="st">"Trustworthiness"</span>,</span>
-<span id="cb19-326"><a href="#cb19-326" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_3"</span>) <span class="sc">~</span> <span class="st">"Dominance"</span>,</span>
-<span id="cb19-327"><a href="#cb19-327" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_4"</span>) <span class="sc">~</span> <span class="st">"Creepiness"</span></span>
-<span id="cb19-328"><a href="#cb19-328" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb19-329"><a href="#cb19-329" aria-hidden="true" tabindex="-1"></a>  ) </span>
-<span id="cb19-330"><a href="#cb19-330" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-331"><a href="#cb19-331" aria-hidden="true" tabindex="-1"></a><span class="co"># Pictures Ranked by Average Rating</span></span>
-<span id="cb19-332"><a href="#cb19-332" aria-hidden="true" tabindex="-1"></a>pics_avg <span class="ot">&lt;-</span> </span>
-<span id="cb19-333"><a href="#cb19-333" aria-hidden="true" tabindex="-1"></a>  pics <span class="sc">|&gt;</span> </span>
-<span id="cb19-334"><a href="#cb19-334" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(name,attribute) <span class="sc">|&gt;</span> </span>
-<span id="cb19-335"><a href="#cb19-335" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb19-336"><a href="#cb19-336" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean =</span> <span class="fu">mean</span>(ratings,<span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb19-337"><a href="#cb19-337" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(ratings,<span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb19-338"><a href="#cb19-338" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-339"><a href="#cb19-339" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Mean)</span>
-<span id="cb19-340"><a href="#cb19-340" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-341"><a href="#cb19-341" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlations</span></span>
-<span id="cb19-342"><a href="#cb19-342" aria-hidden="true" tabindex="-1"></a>at <span class="ot">&lt;-</span> </span>
-<span id="cb19-343"><a href="#cb19-343" aria-hidden="true" tabindex="-1"></a>  pics_avg <span class="sc">|&gt;</span> </span>
-<span id="cb19-344"><a href="#cb19-344" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(attribute <span class="sc">==</span> <span class="st">"Attractiveness"</span>)</span>
-<span id="cb19-345"><a href="#cb19-345" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-346"><a href="#cb19-346" aria-hidden="true" tabindex="-1"></a>tr <span class="ot">&lt;-</span> </span>
-<span id="cb19-347"><a href="#cb19-347" aria-hidden="true" tabindex="-1"></a>  pics_avg <span class="sc">|&gt;</span> </span>
-<span id="cb19-348"><a href="#cb19-348" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(attribute <span class="sc">==</span> <span class="st">"Trustworthiness"</span>)</span>
-<span id="cb19-349"><a href="#cb19-349" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-350"><a href="#cb19-350" aria-hidden="true" tabindex="-1"></a>crp <span class="ot">&lt;-</span> </span>
-<span id="cb19-351"><a href="#cb19-351" aria-hidden="true" tabindex="-1"></a>  pics_avg <span class="sc">|&gt;</span> </span>
-<span id="cb19-352"><a href="#cb19-352" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(attribute <span class="sc">==</span> <span class="st">"Creepiness"</span>)</span>
-<span id="cb19-353"><a href="#cb19-353" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-354"><a href="#cb19-354" aria-hidden="true" tabindex="-1"></a><span class="co"># Attractive x Trustworthiness</span></span>
-<span id="cb19-355"><a href="#cb19-355" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(at<span class="sc">$</span>Mean,tr<span class="sc">$</span>Mean)</span>
-<span id="cb19-356"><a href="#cb19-356" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-357"><a href="#cb19-357" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(tr<span class="sc">$</span>Mean,crp<span class="sc">$</span>Mean)</span>
-<span id="cb19-358"><a href="#cb19-358" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-359"><a href="#cb19-359" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(at<span class="sc">$</span>Mean,crp<span class="sc">$</span>Mean)</span>
-<span id="cb19-360"><a href="#cb19-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-361"><a href="#cb19-361" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-362"><a href="#cb19-362" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-363"><a href="#cb19-363" aria-hidden="true" tabindex="-1"></a><span class="fu">## Qualitative Analyses</span></span>
-<span id="cb19-364"><a href="#cb19-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-365"><a href="#cb19-365" aria-hidden="true" tabindex="-1"></a><span class="fu">### Creepiness Scenario</span></span>
-<span id="cb19-366"><a href="#cb19-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-369"><a href="#cb19-369" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb19-370"><a href="#cb19-370" aria-hidden="true" tabindex="-1"></a>scen <span class="ot">&lt;-</span> </span>
-<span id="cb19-371"><a href="#cb19-371" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
-<span id="cb19-372"><a href="#cb19-372" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Creepiness_Scenario) <span class="sc">|&gt;</span> </span>
-<span id="cb19-373"><a href="#cb19-373" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(Creepiness_Scenario,<span class="st">"test|TEST"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-374"><a href="#cb19-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
-<span id="cb19-375"><a href="#cb19-375" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepiness_Scenario,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">","</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-376"><a href="#cb19-376" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
-<span id="cb19-377"><a href="#cb19-377" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepiness_Scenario,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">"and"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-378"><a href="#cb19-378" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
-<span id="cb19-379"><a href="#cb19-379" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepiness_Scenario,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">";"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-380"><a href="#cb19-380" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-381"><a href="#cb19-381" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepiness_Scenario =</span> <span class="fu">str_trim</span>(Creepiness_Scenario,<span class="st">"left"</span>),</span>
-<span id="cb19-382"><a href="#cb19-382" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepiness_Scenario =</span> <span class="fu">str_to_lower</span>(Creepiness_Scenario),</span>
-<span id="cb19-383"><a href="#cb19-383" aria-hidden="true" tabindex="-1"></a>    <span class="at">length =</span> <span class="fu">str_length</span>(Creepiness_Scenario),</span>
-<span id="cb19-384"><a href="#cb19-384" aria-hidden="true" tabindex="-1"></a>    <span class="at">speaker =</span> <span class="fu">row_number</span>()</span>
-<span id="cb19-385"><a href="#cb19-385" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-386"><a href="#cb19-386" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(Creepiness_Scenario,<span class="st">"^</span><span class="sc">\\</span><span class="st">b"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-387"><a href="#cb19-387" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(length <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb19-388"><a href="#cb19-388" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">20</span>)</span>
-<span id="cb19-389"><a href="#cb19-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-256"><a href="#cb19-256" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="at">size =</span> <span class="dv">9</span>,</span>
+<span id="cb19-257"><a href="#cb19-257" aria-hidden="true" tabindex="-1"></a>             <span class="at">colour =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb19-258"><a href="#cb19-258" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb19-259"><a href="#cb19-259" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">Emotion Category"</span>,</span>
+<span id="cb19-260"><a href="#cb19-260" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">""</span></span>
+<span id="cb19-261"><a href="#cb19-261" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb19-262"><a href="#cb19-262" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">100</span>)<span class="sc">+</span></span>
+<span id="cb19-263"><a href="#cb19-263" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb19-264"><a href="#cb19-264" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"none"</span></span>
+<span id="cb19-265"><a href="#cb19-265" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb19-266"><a href="#cb19-266" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkgreen"</span>,<span class="st">"maroon"</span>))</span>
+<span id="cb19-267"><a href="#cb19-267" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-268"><a href="#cb19-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-269"><a href="#cb19-269" aria-hidden="true" tabindex="-1"></a><span class="fu">## Moral Perception</span></span>
+<span id="cb19-270"><a href="#cb19-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-271"><a href="#cb19-271" aria-hidden="true" tabindex="-1"></a>Participants were shown three questions relating to character judgments of a supposed Creepy individual. The three questions were averaged to create a composite score of moral character, with higher values suggesting bad moral character.</span>
+<span id="cb19-272"><a href="#cb19-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-275"><a href="#cb19-275" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-276"><a href="#cb19-276" aria-hidden="true" tabindex="-1"></a>mc <span class="ot">&lt;-</span> </span>
+<span id="cb19-277"><a href="#cb19-277" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
+<span id="cb19-278"><a href="#cb19-278" aria-hidden="true" tabindex="-1"></a>  <span class="fu">remove_labels</span>()</span>
+<span id="cb19-279"><a href="#cb19-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-280"><a href="#cb19-280" aria-hidden="true" tabindex="-1"></a><span class="co"># One Sample T-Test showing Creepy People are thought to possess 'bad' moral character</span></span>
+<span id="cb19-281"><a href="#cb19-281" aria-hidden="true" tabindex="-1"></a>mc <span class="sc">|&gt;</span> </span>
+<span id="cb19-282"><a href="#cb19-282" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb19-283"><a href="#cb19-283" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(bad_or_good<span class="sc">:</span>trustworthy_r) <span class="sc">|&gt;</span> </span>
+<span id="cb19-284"><a href="#cb19-284" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-285"><a href="#cb19-285" aria-hidden="true" tabindex="-1"></a>    <span class="at">character =</span> <span class="fu">mean</span>(<span class="fu">c_across</span>(bad_or_good<span class="sc">:</span>trustworthy_r))</span>
+<span id="cb19-286"><a href="#cb19-286" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb19-287"><a href="#cb19-287" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(character) <span class="sc">|&gt;</span> </span>
+<span id="cb19-288"><a href="#cb19-288" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb19-289"><a href="#cb19-289" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t.test</span>(<span class="at">mu =</span> <span class="dv">4</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb19-290"><a href="#cb19-290" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb19-291"><a href="#cb19-291" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb19-292"><a href="#cb19-292" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean =</span> estimate,</span>
+<span id="cb19-293"><a href="#cb19-293" aria-hidden="true" tabindex="-1"></a>    <span class="at">t =</span> statistic, </span>
+<span id="cb19-294"><a href="#cb19-294" aria-hidden="true" tabindex="-1"></a>    <span class="at">p =</span> p.value,</span>
+<span id="cb19-295"><a href="#cb19-295" aria-hidden="true" tabindex="-1"></a>    <span class="at">df =</span> parameter</span>
+<span id="cb19-296"><a href="#cb19-296" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb19-297"><a href="#cb19-297" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-298"><a href="#cb19-298" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">CI[ll,uu]</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"["</span>,</span>
+<span id="cb19-299"><a href="#cb19-299" aria-hidden="true" tabindex="-1"></a>                         conf.low <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">0</span>),</span>
+<span id="cb19-300"><a href="#cb19-300" aria-hidden="true" tabindex="-1"></a>                         <span class="st">","</span>,conf.high <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">0</span>),</span>
+<span id="cb19-301"><a href="#cb19-301" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"]"</span>)</span>
+<span id="cb19-302"><a href="#cb19-302" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb19-303"><a href="#cb19-303" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>conf.low,<span class="sc">-</span>conf.high,<span class="sc">-</span>method,<span class="sc">-</span>alternative) <span class="sc">|&gt;</span> </span>
+<span id="cb19-304"><a href="#cb19-304" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(p, <span class="at">.after =</span> <span class="fu">last_col</span>()) <span class="sc">|&gt;</span> </span>
+<span id="cb19-305"><a href="#cb19-305" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hux</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb19-306"><a href="#cb19-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_article</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb19-307"><a href="#cb19-307" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_align</span>(<span class="st">"center"</span>)</span>
+<span id="cb19-308"><a href="#cb19-308" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-309"><a href="#cb19-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-310"><a href="#cb19-310" aria-hidden="true" tabindex="-1"></a><span class="fu">## Face Ratings</span></span>
+<span id="cb19-311"><a href="#cb19-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-314"><a href="#cb19-314" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-315"><a href="#cb19-315" aria-hidden="true" tabindex="-1"></a>pics <span class="ot">&lt;-</span> </span>
+<span id="cb19-316"><a href="#cb19-316" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
+<span id="cb19-317"><a href="#cb19-317" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">matches</span>(<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_</span><span class="sc">\\</span><span class="st">d"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-318"><a href="#cb19-318" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb19-319"><a href="#cb19-319" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> <span class="fu">matches</span>(<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_</span><span class="sc">\\</span><span class="st">d"</span>),</span>
+<span id="cb19-320"><a href="#cb19-320" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"ratings"</span></span>
+<span id="cb19-321"><a href="#cb19-321" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb19-322"><a href="#cb19-322" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-323"><a href="#cb19-323" aria-hidden="true" tabindex="-1"></a>    <span class="at">attribute =</span> </span>
+<span id="cb19-324"><a href="#cb19-324" aria-hidden="true" tabindex="-1"></a>      <span class="fu">case_when</span>(</span>
+<span id="cb19-325"><a href="#cb19-325" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_1"</span>) <span class="sc">~</span> <span class="st">"Attractiveness"</span>,</span>
+<span id="cb19-326"><a href="#cb19-326" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_2"</span>) <span class="sc">~</span> <span class="st">"Trustworthiness"</span>,</span>
+<span id="cb19-327"><a href="#cb19-327" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_3"</span>) <span class="sc">~</span> <span class="st">"Dominance"</span>,</span>
+<span id="cb19-328"><a href="#cb19-328" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_detect</span>(name,<span class="st">"M</span><span class="sc">\\</span><span class="st">d+_4"</span>) <span class="sc">~</span> <span class="st">"Creepiness"</span></span>
+<span id="cb19-329"><a href="#cb19-329" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb19-330"><a href="#cb19-330" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb19-331"><a href="#cb19-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-332"><a href="#cb19-332" aria-hidden="true" tabindex="-1"></a><span class="co"># Pictures Ranked by Average Rating</span></span>
+<span id="cb19-333"><a href="#cb19-333" aria-hidden="true" tabindex="-1"></a>pics_avg <span class="ot">&lt;-</span> </span>
+<span id="cb19-334"><a href="#cb19-334" aria-hidden="true" tabindex="-1"></a>  pics <span class="sc">|&gt;</span> </span>
+<span id="cb19-335"><a href="#cb19-335" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(name,attribute) <span class="sc">|&gt;</span> </span>
+<span id="cb19-336"><a href="#cb19-336" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb19-337"><a href="#cb19-337" aria-hidden="true" tabindex="-1"></a>    <span class="at">Mean =</span> <span class="fu">mean</span>(ratings,<span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-338"><a href="#cb19-338" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(ratings,<span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-339"><a href="#cb19-339" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb19-340"><a href="#cb19-340" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Mean)</span>
+<span id="cb19-341"><a href="#cb19-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-342"><a href="#cb19-342" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlations</span></span>
+<span id="cb19-343"><a href="#cb19-343" aria-hidden="true" tabindex="-1"></a>at <span class="ot">&lt;-</span> </span>
+<span id="cb19-344"><a href="#cb19-344" aria-hidden="true" tabindex="-1"></a>  pics_avg <span class="sc">|&gt;</span> </span>
+<span id="cb19-345"><a href="#cb19-345" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(attribute <span class="sc">==</span> <span class="st">"Attractiveness"</span>)</span>
+<span id="cb19-346"><a href="#cb19-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-347"><a href="#cb19-347" aria-hidden="true" tabindex="-1"></a>tr <span class="ot">&lt;-</span> </span>
+<span id="cb19-348"><a href="#cb19-348" aria-hidden="true" tabindex="-1"></a>  pics_avg <span class="sc">|&gt;</span> </span>
+<span id="cb19-349"><a href="#cb19-349" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(attribute <span class="sc">==</span> <span class="st">"Trustworthiness"</span>)</span>
+<span id="cb19-350"><a href="#cb19-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-351"><a href="#cb19-351" aria-hidden="true" tabindex="-1"></a>crp <span class="ot">&lt;-</span> </span>
+<span id="cb19-352"><a href="#cb19-352" aria-hidden="true" tabindex="-1"></a>  pics_avg <span class="sc">|&gt;</span> </span>
+<span id="cb19-353"><a href="#cb19-353" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(attribute <span class="sc">==</span> <span class="st">"Creepiness"</span>)</span>
+<span id="cb19-354"><a href="#cb19-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-355"><a href="#cb19-355" aria-hidden="true" tabindex="-1"></a><span class="co"># Attractive x Trustworthiness</span></span>
+<span id="cb19-356"><a href="#cb19-356" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(at<span class="sc">$</span>Mean,tr<span class="sc">$</span>Mean)</span>
+<span id="cb19-357"><a href="#cb19-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-358"><a href="#cb19-358" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(tr<span class="sc">$</span>Mean,crp<span class="sc">$</span>Mean)</span>
+<span id="cb19-359"><a href="#cb19-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-360"><a href="#cb19-360" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(at<span class="sc">$</span>Mean,crp<span class="sc">$</span>Mean)</span>
+<span id="cb19-361"><a href="#cb19-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-362"><a href="#cb19-362" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-363"><a href="#cb19-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-364"><a href="#cb19-364" aria-hidden="true" tabindex="-1"></a><span class="fu">## Qualitative Analyses</span></span>
+<span id="cb19-365"><a href="#cb19-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-366"><a href="#cb19-366" aria-hidden="true" tabindex="-1"></a><span class="fu">### Creepiness Scenario</span></span>
+<span id="cb19-367"><a href="#cb19-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-370"><a href="#cb19-370" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-371"><a href="#cb19-371" aria-hidden="true" tabindex="-1"></a>scen <span class="ot">&lt;-</span> </span>
+<span id="cb19-372"><a href="#cb19-372" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
+<span id="cb19-373"><a href="#cb19-373" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Creepiness_Scenario) <span class="sc">|&gt;</span> </span>
+<span id="cb19-374"><a href="#cb19-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(Creepiness_Scenario,<span class="st">"test|TEST"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-375"><a href="#cb19-375" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
+<span id="cb19-376"><a href="#cb19-376" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepiness_Scenario,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">","</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-377"><a href="#cb19-377" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
+<span id="cb19-378"><a href="#cb19-378" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepiness_Scenario,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">"and"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-379"><a href="#cb19-379" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
+<span id="cb19-380"><a href="#cb19-380" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepiness_Scenario,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">";"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-381"><a href="#cb19-381" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-382"><a href="#cb19-382" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepiness_Scenario =</span> <span class="fu">str_trim</span>(Creepiness_Scenario,<span class="st">"left"</span>),</span>
+<span id="cb19-383"><a href="#cb19-383" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepiness_Scenario =</span> <span class="fu">str_to_lower</span>(Creepiness_Scenario),</span>
+<span id="cb19-384"><a href="#cb19-384" aria-hidden="true" tabindex="-1"></a>    <span class="at">length =</span> <span class="fu">str_length</span>(Creepiness_Scenario),</span>
+<span id="cb19-385"><a href="#cb19-385" aria-hidden="true" tabindex="-1"></a>    <span class="at">speaker =</span> <span class="fu">row_number</span>()</span>
+<span id="cb19-386"><a href="#cb19-386" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb19-387"><a href="#cb19-387" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(Creepiness_Scenario,<span class="st">"^</span><span class="sc">\\</span><span class="st">b"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-388"><a href="#cb19-388" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(length <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb19-389"><a href="#cb19-389" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">20</span>)</span>
 <span id="cb19-390"><a href="#cb19-390" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-391"><a href="#cb19-391" aria-hidden="true" tabindex="-1"></a><span class="fu">gvisWordTree</span>(</span>
-<span id="cb19-392"><a href="#cb19-392" aria-hidden="true" tabindex="-1"></a>    scen,</span>
-<span id="cb19-393"><a href="#cb19-393" aria-hidden="true" tabindex="-1"></a>    <span class="at">chartid =</span> <span class="st">"scenario"</span>,</span>
-<span id="cb19-394"><a href="#cb19-394" aria-hidden="true" tabindex="-1"></a>    <span class="at">textvar =</span> <span class="st">"Creepiness_Scenario"</span>,</span>
-<span id="cb19-395"><a href="#cb19-395" aria-hidden="true" tabindex="-1"></a>    <span class="at">options=</span><span class="fu">list</span>(<span class="at">width=</span><span class="dv">2000</span>, </span>
-<span id="cb19-396"><a href="#cb19-396" aria-hidden="true" tabindex="-1"></a>                 <span class="at">height=</span><span class="dv">1000</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-397"><a href="#cb19-397" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(<span class="at">tag =</span> <span class="cn">NULL</span>)</span>
-<span id="cb19-398"><a href="#cb19-398" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-399"><a href="#cb19-399" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-400"><a href="#cb19-400" aria-hidden="true" tabindex="-1"></a><span class="fu">### Creepy Hobbies</span></span>
-<span id="cb19-401"><a href="#cb19-401" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-404"><a href="#cb19-404" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb19-405"><a href="#cb19-405" aria-hidden="true" tabindex="-1"></a>hob <span class="ot">&lt;-</span> </span>
-<span id="cb19-406"><a href="#cb19-406" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
-<span id="cb19-407"><a href="#cb19-407" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Creepy_Hobby) <span class="sc">|&gt;</span> </span>
-<span id="cb19-408"><a href="#cb19-408" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove single answer and placeholder text</span></span>
-<span id="cb19-409"><a href="#cb19-409" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(Creepy_Hobby,<span class="st">"^h|(s){3}</span><span class="sc">\\</span><span class="st">1"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-410"><a href="#cb19-410" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Separate by (, and or)</span></span>
-<span id="cb19-411"><a href="#cb19-411" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
-<span id="cb19-412"><a href="#cb19-412" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepy_Hobby,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">","</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-413"><a href="#cb19-413" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
-<span id="cb19-414"><a href="#cb19-414" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepy_Hobby,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">"and"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb19-415"><a href="#cb19-415" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb19-416"><a href="#cb19-416" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepy_Hobby =</span> <span class="fu">str_trim</span>(Creepy_Hobby,<span class="st">"left"</span>),</span>
-<span id="cb19-417"><a href="#cb19-417" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepy_Hobby =</span> <span class="fu">str_to_lower</span>(Creepy_Hobby)</span>
-<span id="cb19-418"><a href="#cb19-418" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-419"><a href="#cb19-419" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-420"><a href="#cb19-420" aria-hidden="true" tabindex="-1"></a>creep_gv <span class="ot">&lt;-</span> </span>
-<span id="cb19-421"><a href="#cb19-421" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gvisWordTree</span>(<span class="at">data =</span> hob, </span>
-<span id="cb19-422"><a href="#cb19-422" aria-hidden="true" tabindex="-1"></a>             <span class="at">textvar =</span> <span class="st">"Creepy_Hobby"</span>,</span>
-<span id="cb19-423"><a href="#cb19-423" aria-hidden="true" tabindex="-1"></a>             <span class="at">chartid =</span> <span class="st">"hobby"</span>,</span>
-<span id="cb19-424"><a href="#cb19-424" aria-hidden="true" tabindex="-1"></a>             <span class="at">options=</span><span class="fu">list</span>(<span class="at">width=</span><span class="dv">2000</span>, </span>
-<span id="cb19-425"><a href="#cb19-425" aria-hidden="true" tabindex="-1"></a>                 <span class="at">height=</span><span class="dv">1000</span>)) </span>
-<span id="cb19-426"><a href="#cb19-426" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-427"><a href="#cb19-427" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-428"><a href="#cb19-428" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-429"><a href="#cb19-429" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb19-430"><a href="#cb19-430" aria-hidden="true" tabindex="-1"></a><span class="in">`r creep_gv |&gt; print()`</span></span>
-<span id="cb19-431"><a href="#cb19-431" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-391"><a href="#cb19-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-392"><a href="#cb19-392" aria-hidden="true" tabindex="-1"></a><span class="fu">gvisWordTree</span>(</span>
+<span id="cb19-393"><a href="#cb19-393" aria-hidden="true" tabindex="-1"></a>    scen,</span>
+<span id="cb19-394"><a href="#cb19-394" aria-hidden="true" tabindex="-1"></a>    <span class="at">chartid =</span> <span class="st">"scenario"</span>,</span>
+<span id="cb19-395"><a href="#cb19-395" aria-hidden="true" tabindex="-1"></a>    <span class="at">textvar =</span> <span class="st">"Creepiness_Scenario"</span>,</span>
+<span id="cb19-396"><a href="#cb19-396" aria-hidden="true" tabindex="-1"></a>    <span class="at">options=</span><span class="fu">list</span>(<span class="at">width=</span><span class="dv">2000</span>, </span>
+<span id="cb19-397"><a href="#cb19-397" aria-hidden="true" tabindex="-1"></a>                 <span class="at">height=</span><span class="dv">1000</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-398"><a href="#cb19-398" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(<span class="at">tag =</span> <span class="cn">NULL</span>)</span>
+<span id="cb19-399"><a href="#cb19-399" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-400"><a href="#cb19-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-401"><a href="#cb19-401" aria-hidden="true" tabindex="-1"></a><span class="fu">### Creepy Hobbies</span></span>
+<span id="cb19-402"><a href="#cb19-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-405"><a href="#cb19-405" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-406"><a href="#cb19-406" aria-hidden="true" tabindex="-1"></a>hob <span class="ot">&lt;-</span> </span>
+<span id="cb19-407"><a href="#cb19-407" aria-hidden="true" tabindex="-1"></a>  cr_cln <span class="sc">|&gt;</span> </span>
+<span id="cb19-408"><a href="#cb19-408" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Creepy_Hobby) <span class="sc">|&gt;</span> </span>
+<span id="cb19-409"><a href="#cb19-409" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove single answer and placeholder text</span></span>
+<span id="cb19-410"><a href="#cb19-410" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(Creepy_Hobby,<span class="st">"^h|(s){3}</span><span class="sc">\\</span><span class="st">1"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-411"><a href="#cb19-411" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Separate by (, and or)</span></span>
+<span id="cb19-412"><a href="#cb19-412" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
+<span id="cb19-413"><a href="#cb19-413" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepy_Hobby,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">","</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-414"><a href="#cb19-414" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate_longer_delim</span>(</span>
+<span id="cb19-415"><a href="#cb19-415" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> Creepy_Hobby,<span class="at">delim =</span> <span class="fu">c</span>(<span class="st">"and"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-416"><a href="#cb19-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-417"><a href="#cb19-417" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepy_Hobby =</span> <span class="fu">str_trim</span>(Creepy_Hobby,<span class="st">"left"</span>),</span>
+<span id="cb19-418"><a href="#cb19-418" aria-hidden="true" tabindex="-1"></a>    <span class="at">Creepy_Hobby =</span> <span class="fu">str_to_lower</span>(Creepy_Hobby)</span>
+<span id="cb19-419"><a href="#cb19-419" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb19-420"><a href="#cb19-420" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-421"><a href="#cb19-421" aria-hidden="true" tabindex="-1"></a>creep_gv <span class="ot">&lt;-</span> </span>
+<span id="cb19-422"><a href="#cb19-422" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gvisWordTree</span>(<span class="at">data =</span> hob, </span>
+<span id="cb19-423"><a href="#cb19-423" aria-hidden="true" tabindex="-1"></a>             <span class="at">textvar =</span> <span class="st">"Creepy_Hobby"</span>,</span>
+<span id="cb19-424"><a href="#cb19-424" aria-hidden="true" tabindex="-1"></a>             <span class="at">chartid =</span> <span class="st">"hobby"</span>,</span>
+<span id="cb19-425"><a href="#cb19-425" aria-hidden="true" tabindex="-1"></a>             <span class="at">options=</span><span class="fu">list</span>(<span class="at">width=</span><span class="dv">2000</span>, </span>
+<span id="cb19-426"><a href="#cb19-426" aria-hidden="true" tabindex="-1"></a>                 <span class="at">height=</span><span class="dv">1000</span>)) </span>
+<span id="cb19-427"><a href="#cb19-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-428"><a href="#cb19-428" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-429"><a href="#cb19-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-430"><a href="#cb19-430" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb19-431"><a href="#cb19-431" aria-hidden="true" tabindex="-1"></a><span class="in">`r creep_gv |&gt; print()`</span></span>
+<span id="cb19-432"><a href="#cb19-432" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
