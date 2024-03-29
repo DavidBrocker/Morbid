@@ -324,24 +324,66 @@ pics_avg <-
   arrange(Mean)
 
 # Correlations
+# Attractiveness
 at <- 
   pics_avg |> 
   filter(attribute == "Attractiveness")
-
+# Trustworthiness
 tr <- 
   pics_avg |> 
   filter(attribute == "Trustworthiness")
-
+# Creepiness
 crp <- 
   pics_avg |> 
   filter(attribute == "Creepiness")
 
 # Attractive x Trustworthiness
-cor.test(at$Mean,tr$Mean)
+cor.test(at$Mean,tr$Mean) |> 
+  tidy() |> 
+  rename(
+    r = estimate, 
+    t = statistic,
+    p = p.value, 
+    df = parameter) |> 
+    mutate(
+      `CI[ll,uu]` = paste0("[",
+                         conf.low |> round(0),
+                         ",",conf.high |> round(0),
+                         "]"))
+  hux() |> 
+  theme_article()
 
-cor.test(tr$Mean,crp$Mean)
+cor.test(tr$Mean,crp$Mean) |> 
+    tidy() |> 
+    rename(
+    r = estimate, 
+    t = statistic,
+    p = p.value, 
+    df = parameter) |> 
+    mutate(
+      `CI[ll,uu]` = paste0("[",
+                         conf.low |> round(0),
+                         ",",conf.high |> round(0),
+                         "]"))
+  hux() |> 
+  theme_article()
 
-cor.test(at$Mean,crp$Mean)
+cor.test(at$Mean,crp$Mean) |> 
+    tidy() |> 
+    rename(
+    r = estimate, 
+    t = statistic,
+    p = p.value, 
+    df = parameter) |> 
+    mutate(
+      `CI[ll,uu]` = paste0("[",
+                         conf.low |> round(0),
+                         ",",conf.high |> round(0),
+                         "]"))
+  hux() |> 
+  theme_article()
+
+
 
 ```
 
