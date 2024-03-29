@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Morbid Curioisty
       - about.qmd
       - creepy.qmd
 
