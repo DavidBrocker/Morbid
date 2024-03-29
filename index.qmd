@@ -13,6 +13,7 @@ editor: visual
 theme: 
   light: flatly
   dark: darkly
+lightbox: true
 ---
 
 ## Hypotheses:
@@ -222,7 +223,7 @@ discrete_tab <- function(data,x,lab){
     Mind = SC1, 
     Body = SC2, 
     Violence = SC3,
-    Paranormal = SC4, 
+    Paranormal = SC4,
     Horror_Typology_Overall = SC5, 
     AJ = SC6, 
     WK = SC7, 
@@ -295,7 +296,7 @@ gen |>
   set_top_border(row = 1:3,1:3) |> 
   set_align(col = 1, value = "left") |>  
   set_align(1,1,"center") |> 
-  set_caption("Table 2: Participant Demographics") |> 
+  # set_caption("Table 2: Participant Demographics") |> 
   set_width(value = 1)
 ```
 
@@ -361,7 +362,7 @@ t.test(mc_scaled$State_Post,mc_scaled$State_Pre, paired = T) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-    set_caption("Table 3:  No significant difference (or decrease in anxiety)") |> 
+    # set_caption("Table 3:  No significant difference (or decrease in anxiety)") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -379,8 +380,8 @@ t.test(mc_scaled$State_Pre,mc_scaled$Trait,paired = T) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 4: Significant Difference between Pre Anxiety and Trait Anxiety
-") |> 
+#   set_caption("Table 4: Significant Difference between Pre Anxiety and Trait Anxiety
+# ") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -398,7 +399,7 @@ t.test(mc_scaled$State_Post,mc_scaled$Trait,paired = T) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 5: Significant Difference between Posttest Anxiety and Overall") |> 
+  # set_caption("Table 5: Significant Difference between Posttest Anxiety and Overall") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -423,7 +424,7 @@ mc_scaled %>%
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 6: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the pretest measure of STAI") |> 
+  # set_caption("Table 6: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the pretest measure of STAI") |> 
   set_caption_pos("bottom") |> 
   set_width(value = 1)
 ```
@@ -448,7 +449,7 @@ mc_scaled %>%
   ) |> 
   hux() |> 
   theme_article() |> 
-    set_caption("Table 7: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the posttest measure of STAI") |> 
+    # set_caption("Table 7: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the posttest measure of STAI") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -473,7 +474,7 @@ mc_scaled %>%
   ) |> 
   hux() |> 
   theme_article() |> 
-    set_caption("Table 8: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the trait measure of STAI") |> 
+    # set_caption("Table 8: There are significantly more 'high-anxiety' individuals compared to 'low'anxiety' individuals based on scores from the trait measure of STAI") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -522,7 +523,7 @@ mc_tab <-
   huxreg(error_pos = "right",
          statistics = character(0)) |> 
   theme_article() |> 
-  set_caption("Table 9: Model showing Morbid Curiosity Overall score as a predictor of Horror Typology Overall score") |> 
+  # set_caption("Table 9: Model showing Morbid Curiosity Overall score as a predictor of Horror Typology Overall score") |> 
   set_caption_pos("bottom") |> 
   set_width(value = 1)
 
@@ -555,7 +556,7 @@ mc_st_tab <-
   huxreg(error_pos = "right",
          statistics = character(0)) |> 
   theme_article() |> 
-  set_caption("Table 10: Model showing Morbid Curiosity Overall score as a poor predictor of STAI Pre and Post") |> 
+  # set_caption("Table 10: Model showing Morbid Curiosity Overall score as a poor predictor of STAI Pre and Post") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 
@@ -618,7 +619,7 @@ choice_tt |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 11: Paired t-test showing participants chose significantally more positive items.") |> 
+  # set_caption("Table 11: Paired t-test showing participants chose significantally more positive items.") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -633,7 +634,7 @@ mc_neg.mod_tab <-
   huxreg(error_pos = "right",
          statistics = character(0)) |> 
   theme_article() |> 
-  set_caption("Table 12: Model showing negative choice selection is accurately predicted by Morbid Curiosity Scale score") |> 
+  # set_caption("Table 12: Model showing negative choice selection is accurately predicted by Morbid Curiosity Scale score") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 
@@ -685,7 +686,7 @@ t.test(gen_tt$Morbid_Curiosity_Overall~gen_tt$Gender) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 12: Independent t-test shows no significant difference between scores on Morbid Curiosity Scale.") |> 
+  # set_caption("Table 12: Independent t-test shows no significant difference between scores on Morbid Curiosity Scale.") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 
@@ -713,7 +714,7 @@ t.test(genht_tt$Horror_Typology_Overall~genht_tt$Gender) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 13: Independent t-test shows no significant difference between scores on Horror Typology Scale.") |> 
+  # set_caption("Table 13: Independent t-test shows no significant difference between scores on Horror Typology Scale.") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -744,7 +745,7 @@ cor.test(gen_quest$self_mc,gen_quest$morbid_curiosity_overall) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 14: Participants self rating of being morbidly curious was significantlly positivly correlated with morbid curiosity score") |> 
+  # set_caption("Table 14: Participants self rating of being morbidly curious was significantlly positivly correlated with morbid curiosity score") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -762,8 +763,8 @@ cor.test(gen_quest$self_hor,gen_quest$horror_typology_overall) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 15: Participants self rating of enjoying the horror genre was significantlly positivly correlated with horror typology score") |> 
-  set_caption_pos("bottom")|> 
+  # set_caption("Table 15: Participants self rating of enjoying the horror genre was significantlly positivly correlated with horror typology score") |> 
+  # set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
 
@@ -780,7 +781,7 @@ cor.test(gen_quest$self_anx, gen_quest$trait) |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 16: Participants self rating of anxiety was significantly positively correlated with the trait measure of anxiety.") |> 
+  # set_caption("Table 16: Participants self rating of anxiety was significantly positively correlated with the trait measure of anxiety.") |> 
   set_caption_pos("bottom")|> 
   set_width(value = 1)
 ```
@@ -798,7 +799,7 @@ t.test(gen_quest$people_mc, mu = 4, alternative = "greater") |>
   ) |> 
   hux() |> 
   theme_article() |> 
-  set_caption("Table 17: Single-sample t-test against the midpoint of 4 showed that people generally believe others to be morbidly curious.") |> 
+  # set_caption("Table 17: Single-sample t-test against the midpoint of 4 showed that people generally believe others to be morbidly curious.") |> 
   set_caption_pos("bottom") |> 
   set_width(value = 1)
 ```
@@ -833,6 +834,6 @@ gen_quest |>
   hux() |> 
   theme_article() |> 
   set_width(value = 1) |> 
-  set_align(col = 3, value = "center") |> 
-  set_caption("Table 18: Descriptive statistics of all numeric variables.")
+  set_align(col = 3, value = "center") 
+  # set_caption("Table 18: Descriptive statistics of all numeric variables.")
 ```
