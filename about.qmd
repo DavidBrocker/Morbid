@@ -1,0 +1,28 @@
+---
+title: "References"
+format: 
+  html:
+    code-fold: true
+    code-link: true
+    code-tools: true
+    toc: true
+    toc-depth: 3
+    toc-location: left
+editor: visual
+theme: 
+  light: flatly
+  dark: darkly
+lightbox: true
+---
+
+# **About**
+
+## **Background**
+
+-   Research shows people deliberately subject themselves to negative stimuli, suggesting a behavioral preference for such stimuli Kerr, Siegle, and Orsini ([2019](#ref-kerr2019voluntary)); Oosterwijk ([2017](#ref-oosterwijk2017choosing))
+
+-   People rated high in morbid curiosity tend to identity with the "horror fandom" Scrivner and Christensen ([2021](#ref-scrivner2021scaring)); Scrivner ([2021](#ref-scrivner2021psychology))
+
+-   Research indicates individuals use horror content to cope with anxiety & regulate emotions ("Self-Trigger") Scrivner and Christensen ([2021](#ref-scrivner2021scaring)); Bellet, Jones, and McNally ([2020](#ref-bellet2020self))
+
+-   Horror fan motivations characterized by the Horror Typology Scale Scrivner et al. ([2022](#ref-scrivner2022psychological))
