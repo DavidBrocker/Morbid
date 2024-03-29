@@ -835,5 +835,4 @@ gen_quest |>
   theme_article() |> 
   set_width(value = 1) |> 
   set_align(col = 3, value = "center") 
-  # set_caption("Table 18: Descriptive statistics of all numeric variables.")
-```
+  # set_caption("Table 18: Desc
