@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Morbid Curiosity, Horror Typology, and VANE"
+  title: "IGNITE Symposium Vol. 2"
   navbar:
     left:
       - href: index.qmd
