@@ -287,105 +287,10 @@ mc |>
                          "]")
   ) |> 
   select(-conf.low,-conf.high,-method,-alternative) |> 
-  relocate(p, .after = last_col()) |> 
-  hux() |> 
-  theme_article() |> 
-  set_align("center")
+  relocate(p, .after = last_col())
 ```
 
 ## Face Ratings
-
-```{r}
-pics <- 
-  cr_cln |> 
-  select(matches("M\\d+_\\d")) |> 
-  pivot_longer(
-    cols = matches("M\\d+_\\d"),
-    values_to = "ratings"
-  ) |> 
-  mutate(
-    attribute = 
-      case_when(
-        str_detect(name,"M\\d+_1") ~ "Attractiveness",
-        str_detect(name,"M\\d+_2") ~ "Trustworthiness",
-        str_detect(name,"M\\d+_3") ~ "Dominance",
-        str_detect(name,"M\\d+_4") ~ "Creepiness"
-    )
-  ) 
-
-# Pictures Ranked by Average Rating
-pics_avg <- 
-  pics |> 
-  group_by(name,attribute) |> 
-  summarize(
-    Mean = mean(ratings,na.rm = TRUE),
-    SD = sd(ratings,na.rm = TRUE)
-  ) |> 
-  arrange(Mean)
-
-# Correlations
-# Attractiveness
-at <- 
-  pics_avg |> 
-  filter(attribute == "Attractiveness")
-# Trustworthiness
-tr <- 
-  pics_avg |> 
-  filter(attribute == "Trustworthiness")
-# Creepiness
-crp <- 
-  pics_avg |> 
-  filter(attribute == "Creepiness")
-
-# Attractive x Trustworthiness
-cor.test(at$Mean,tr$Mean) |> 
-  tidy() |> 
-  rename(
-    r = estimate, 
-    t = statistic,
-    p = p.value, 
-    df = parameter) |> 
-    mutate(
-      `CI[ll,uu]` = paste0("[",
-                         conf.low |> round(0),
-                         ",",conf.high |> round(0),
-                         "]"))
-  hux() |> 
-  theme_article()
-
-cor.test(tr$Mean,crp$Mean) |> 
-    tidy() |> 
-    rename(
-    r = estimate, 
-    t = statistic,
-    p = p.value, 
-    df = parameter) |> 
-    mutate(
-      `CI[ll,uu]` = paste0("[",
-                         conf.low |> round(0),
-                         ",",conf.high |> round(0),
-                         "]"))
-  hux() |> 
-  theme_article()
-
-cor.test(at$Mean,crp$Mean) |> 
-    tidy() |> 
-    rename(
-    r = estimate, 
-    t = statistic,
-    p = p.value, 
-    df = parameter) |> 
-    mutate(
-      `CI[ll,uu]` = paste0("[",
-                         conf.low |> round(0),
-                         ",",conf.high |> round(0),
-                         "]"))
-  hux() |> 
-  theme_article()
-
-
-
-```
 
 ## Qualitative Analyses
 

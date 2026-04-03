@@ -1,0 +1,151 @@
+---
+title: "Linguistic Framing and Norm Construction in Online Self-Harm Communities"
+author: "Mia Diccico and Dave Brocker"
+format: 
+  html:
+    code-link: true
+    lightbox: true
+editor: visual
+---
+
+## Topic
+
+Communities that discuss self-harm appear to operate in a specific and in-group way where their language adopts a myriad of linguistic components and thematic elements.
+
+### Method
+
+100 posts were gathered from four different online communities, [r/selfharm](reddit.com/r/selfharm), [r/madeofstyrofoam](reddit.com/r/madeofstyrofoam), [r/socialwork](reddit.com/r/socialwork), and [r/therapists](reddit.com/r/therapists)
+
+### Analysis
+
+-   This project uses lexicon-based sentiment analysis
+
+    -   NRC (add citation and example)
+
+    -   Afinn (add citation and example)
+
+    -   Loughran (add citation and example)
+
+    -   Bing (add citation and example)
+
+-   Additionally, it uses the `sentimentr` package
+
+    -   Rinker, T. W. (2021). sentimentr: Calculate Text Polarity Sentiment version 2.9.0. https://github.com/trinker/sentimentr
+
+## Data Availability
+
+All data is taken from R using `redditExtractoR` and or `rvest` for webscraping. Data used in the analysis can be found [here](https://github.com/DavidBrocker/SharmTha).
+
+## Themes Observed
+
+1.  **Dark Humor**
+
+    1.  Characterized by a mixture of positive/negative sentiment, profanity, emoji-use, non-standard linguistic patterns
+
+2.  **Addiction Language**
+
+    1.  Characterized by terms like `relapse`, `withdrawl`, `binging`
+
+3.  **Community Restriction**
+
+    1.  Characterized by adherence to the group rules and downvoting or exclusion of outsiders 'looking to do good'.
+
+4.  **Community Support**
+
+    1.  Characterized by members of subreddits providing support and resources to users
+
+5.  **Community Perspectives**
+
+    1.  Characterized by members of subreddits providing their experiences with self harm and mental health professionals perspectives working with those who self harm
+
+        ## **Dark Humor**
+
+One anonymous post is of an image with blurred text that reads:
+
+> *This is what it looks like when you're trying to look at memes through your tears to cheer yourself up*
+
+Another anonymous post shows an image of a calculus question made by the user stating:
+
+> *How many times in your life have you purposely hurt yourself WITHOUT trying to die? (Please give your best estimate)*
+
+One anonymous post shows a blurred image of one person crying while the other is happy with text saying "adrenalineee" above. It further states:
+
+> *How people described s/h to me vs how it's like for me: - sad emotional moment -crying with a razorblade, in front of the sink, looking at yourself in the mirror"*
+
+An anonymous post showing an image of an clementine with text stating "I know it doesn't look exactly like hitting beans but still reminds me of it" also displays text that reads:
+
+> *Me: trying to stay clean and eating a clementine, The clementine:*
+
+An anonymous post showing an image of two figures- one looking concerned while the other has a blank stare with text stating:
+
+> *"Stop cutting, it hurts ME"*
+
+## Addiction Language
+
+One anonymous post with an image of a girl holding a "I love SH" shirt has a comment that states:
+
+> *Does the* <mark>urge</mark> ever truly go away
+
+One user posts that "i releapse today after. after 5 months.". One top comment replies and states:
+
+> *You're not worthless, everybody makes mistakes and* <mark>relapse</mark> is a part of recovery. Do you want to talk about it?
+
+One anonymous post has a description stating:
+
+> *Wow we really are all* <mark>addicts</mark> huh... I never really considered yeeting an addiction until I tried to quit. I love this community and how we all support each other, it’s so positive and nice. I love how we can joke about our shit mental health. Honestly y’all really are the best
+
+A user describes their history with sh from a young age and states that sh fills a void of emptiness for them. The post title includes important language stating:
+
+> *I dont think I can ever actually* <mark>recover</mark>
+
+A user displays the fact that they have been self harm free for one year now. In the post title it includes important language stating:
+
+> *One year* <mark>clean</mark>, wow...
+
+## Community Support
+
+One anonymous post that discusses judgement of self harm scars contains a replying comment stating:
+
+> *Okay, but I hate ppl who are like points to my years old scars "you know thats permanent right?" woaaaah! realllyyy???? I had no idea!!!!!*
+
+Another anonymous post has a user discussing that she feel as though her sh scars are invalid with how they are disappearing or look similar to cat scratches. One of the top comments states:
+
+> *Youre far from invalid, do not compare to others on this of all things. Its not about the cuts or the scars, its about the endorphins. I get it, I want something tangible to make this goblin in my brain happy but Im happy that cat scratches still give the good feels.Im really processing my own feelings on this matter too so take me with a grain of salt.*
+
+One user writes in a post that their cat had helped stopped them from self-harming by comforting them. A top comment explains:
+
+> *What a good kitty!! In a similar vein, a few months after I got my cat I had a major depressive episode where I just couldn't get out of bed. My cat stayed by my side for about 24 hours, until later in the 2nd evening she pushed my door open and started yelling at me like "come on, Mom! It's time to get up!" And she didn't even need food or water thanks to my wonderful husband. I've had her since the middle of December and she's definitely my soul kitty.I know exactly what you mean when you say you'll live for your cat. I feel the same way*
+
+An anonymous post shows an image of a roblox character. They explained that a group of women had made fun of their self harm scars. A top comment under the post states:
+
+> *That is really embarrassing of them. Being adults and thinking that’s appropriate behavior just shows they never grew up and their opinions aren’t to be taken seriously. Some people never learn basic empathy and it sucks that they can cause so much hurt and harm so easily. Even the image of it in my head is rough so I can only imagine how it actually felt. I’m really sorry that happened and I hope you can push through.*
+
+A user posted an anonymous post discussing how a youtuber had called someone with similar sh scars to them as gruesome. A top comment states:
+
+> *Reminds me of when my mother said to me “what would* <my at the time toddler nephews name> think when he sees them? They’re quite gruesome”. Gee thanks, I really feel like openly showing scars after hearing that!
+
+## Community Perspectives
+
+One anonymous post with an image of a skull with text discussing apperence states:
+
+> *Like why? What did that prove? Was it really necessary? She knows I have a history of anorexia and she still mentions it. She knows I cut myself (thanks mom for needing to tell my family everything) and she still mentions it! We didn’t even talk about appearances or even weight?!*
+
+An anonymous post with text reading "How did y'all admit to SH?", has a top comment that states:
+
+> *I haven’t been in the mental hospital situation, but I went through the whole needing to wear shorts for something. At the time, my parents already knew about it. They didn’t know I relapsed, so I was trying to get out of having to wear it. It didn’t work, so I had to lie about where they came from. Looking back on it now, if I was just honest I could’ve gotten the help I needed. I don’t know how your parents compare to mine, so im not sure what your relationship is with them- but regardless, im sure this will help you in the long run.*
+
+One user describes in their post that they SH for no reason. One top comment reads:
+
+> *Yeah, lately it feels like something I have to do regardless of my feelings, but I don't sh when I feel happy(? Or lazy. Like, my mind says: bro you're not feeling anything, it's Showtime! Or; bro you're sad, yk what to do (did this make sense?)*
+
+An anonymous post describes the perspective of a user's experience with self harm In their post one excerpt states:
+
+> *Cutting is not the only form of sh ive done over the years, I’ve also binged (binge eating) as sh and smoking but it was more intended to ”calm myself”. I don’t really have a good reason for this apart from feeling constant anxiety/stress and having to drop out of high school once and it being a risk that i have gotten epilepsy. I just can’t seem to stop*
+
+One anonymous post focuses on a user's perspective of how they feel after sh. Their post description states:
+
+> *like no guilt nothing. i felt ashamed and angry today so i did it and then afterwards i was like well. time for duolingo. i dont feel guilty or ashamed at all for shing. am i the only one?*
+
+## Poster
+
+![](Capture.PNG)

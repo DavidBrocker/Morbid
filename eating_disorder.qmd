@@ -1,0 +1,64 @@
+---
+title: "Social Dynamics in Online Eating Disorder Communities: 
+A Multi-Platform Analysis"
+author: "Lisa Manno"
+format: 
+  html:
+    lightbox: true
+    code-fold: true
+editor: visual
+---
+
+# Background
+
+## Theme Categorization
+
+Themes were classified by two independent raters. The text contains information for both the title of the post and the post inside the thread content. This means that in some cases, the title is descriptive enough to lend itself to theming, however, the title can sometimes be non-descript and be more explanatory in the text.
+
+::: callout-note
+Full text has been truncated to avoid identification in searching attempts
+:::
+
+### Seeking Advice
+
+> "Should I take time off from college to focus on my mental health and recovery?" \[Title\]
+>
+> \[No Thread Text\]
+
+### Call for Help
+
+> "Trouble eating after not eating for long periods of time" \[Title\]
+>
+> ...I'm very hungry and so weak and feel like my body is slowly dying orsomething and I've tried to eat I've ate some food but the feeling is still there like there's a pit in my stomach where all the food I skipped for the past couple of days is meant to be and it's not going away... \[Text\]
+
+### Concern
+
+> "my sister needs help" \[Title\]
+>
+> ...She has a really bad eating habit, all she does is eat and talk about how hungry she is. She gained a lot of weight. She tells me she is always bored so she eats. Even if she ate something she would want to eat again. It really is heartbreaking to watch my younger sister just eat her boredom away. I try to have her do actives, like play outside or paint with me... \[Text\]
+
+### Preemptive Support
+
+> "How to I stop it early on?" \[Title\]
+>
+> ...In my case it's not a way to regulate the way my body looks, I'd say it's more that when I'm stressed or in a bad place, sometimes I'll be unable to eat even though I'm extremely hungry. I've managed to keep it down before, but this week it really felt like shit, idk what to do. I guess the universal answer is to find better coping mechanisms, but concretely are there any tips of things I can do to keep it down and not get too far into it in the first place?... \[Text\]
+
+### Seeking Help
+
+> "How to go from low to high res? (harm reduction recovery, NOT anti-recovery)" \[Title\]
+>
+> \[No Thread Text\]
+
+### Seeking Support
+
+> "Overweight after recovery: guilty and seeking advice" \[Title\]
+>
+> ...I developed a BED in middle school where i wouldn't eat at school but go home and eat way too much in the span of 30 minutes before my other siblings came home. in high school, i shifted to a heavily restrictive diet on top of 1.5 hours at the gym 6 days/week. i lost a lot of weight. and i dont think that people who haven't gone through this kind of thing realize how differently people treat you after and that still messes with me.  after years of support from my friends and my current partner of four years, i slowly grew out of these habits. my relationship with food is still not great but it's better than its ever been... \[Text\]
+
+### Venting
+
+> "Are these good signs for getting my period back?" **\[Title\]**
+>
+> ...Here are some of the things ive noticed ive gotten in the past month or so: More discharge which fluctuates in texture Lower abdominal cramps occasionally Sore lower back occasionally Bloating in the morning occasionally (after meals too, but i think thats normal) ... **\[Text**\]
+
+![](LM_Post.PNG)

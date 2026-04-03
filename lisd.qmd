@@ -1,0 +1,100 @@
+---
+title: "Loneliness, Isolation, and Anxiety as a Result of the COVID-19 Pandemic"
+author: Emma Brown
+format: html
+editor: visual
+---
+
+# **Supplementary Materials**
+
+### Emma Brown & Faculty Mentor: Dave Brocker
+
+#### Applied Psychology, Farmingdale State College
+
+This page provides additional information and references related to the research poster presented at the Farmingdale State College IGNITE Symposium. 
+
+**Abstract**
+
+> The purpose of this study is to examine how experiences of loneliness, social isolation, and anxiety among current FSC ﻿college students differed before, during, and after the COVID-19 pandemic. The pandemic substantially disrupted social routines and social connections, particularly for emerging adults (Marroquín et al., 2020; Wilkialis et al., 2021). Prior research has demonstrated increased psychological distress during periods of mandated isolation, however, less is known about how these emotional experiences changed across different phases of the pandemic and whether certain effects persisted following the return to post-pandemic routines (Wilkialis et al., 2021; Marroquín et al., 2020).
+
+**Research Questions**
+
+1.  *Do levels of loneliness, social isolation, and anxiety differ across the three time periods (pre-pandemic, during the pandemic, and post-pandemic)?*
+
+2.  *What relationships exist among loneliness, social isolation, anxiety, disgust sensitivity, and social distancing behaviors?*
+
+**Hypotheses**
+
+H~1~. Participants will report higher loneliness, isolation, and anxiety during the pandemic compared to before and after. 
+
+H~2~. Loneliness and social isolation will be positively correlated with anxiety across time periods.
+
+H~3~. Disgust sensitivity and social distancing behavior will be explored as potential correlates of anxiety and perceived isolation. 
+
+**Methods Summary**
+
+Participants will be undergraduate students (18+) recruited through the Farmingdale State College SONA participant pool. Participants will complete an anonymous online survey through Qualtrics after reviewing a Research Information Sheet and providing consent. 
+
+The survey includes several established psychological measures assessing emotional experiences during the COVID-19 pandemic. 
+
+**Measures**:
+
+-   State-Trait Anxiety Inventory - Trait Subscale (STAI-T) 
+
+-   Disgust Scale-Revised (DS-R)
+
+-   Social Distancing Behavior Scale 
+
+-   Loneliness and Isolation During Social Distancing (LISD) Scale 
+
+**Planned Analyses**
+
+The following statistical analyses are planned:
+
+**Repeated-Measures ANOVA**
+
+To examine differences in anxiety across pre-pandemic, pandemic, and post-pandemic time periods. 
+
+**Correlation Analyses**
+
+To examine relationships among loneliness, social isolation, anxiety, disgust sensitivity, and social distancing behaviors. 
+
+**Regression Analyses**
+
+To test whether loneliness, disgust sensitivity, and distancing behaviors predict anxiety levels. 
+
+**References**
+
+Gavin, B., Lyne, J., & McNicholas, F. (2020). Mental health and the COVID-19 pandemic. Irish journal of psychological medicine, 37(3), 156-158. 
+
+Gründahl, M., Weiß, M., Maier, L., Hewig, J., Deckert, J., & Hein, G. (2022). Construction and validation of a scale to measure loneliness and isolation during social distancing and its effect on mental health. Frontiers in psychiatry, 13, 798596. 
+
+Haidt, J., McCauley, C., Rozin, P. (1994). Individual differences in sensitivity to disgust: A scale sampling seven domains of disgust elicitors. Personality and individual differences, 16(5), 701-713.
+
+Marroquín, B., Vine, V., & Morgan, R. (2020). Mental health during the COVID-19 pandemic: Effects of stay-at-home policies, social distancing behavior, and social resources. Psychiatry research, 293, 113419.
+
+Olatunji, B.O., Sawchuk, C.N., de Jong, P.J., Lohr, J. (2007). Disgust Sensitivity and Anxiety Disorder Symptoms: Psychometric Properties of the Disgust Emotion Scale. Journal of Psychopathology and Behavioral Assessment, 29, 115–124.  
+
+Prachthauser, M., Cassisi, J. E., Le, T. A., & Nicasio, A. V. (2020). The Social Distance Scale (v1): A Screening Instrument to Assess Patient Adherence to Prevention Strategies during Pandemics. International journal of environmental research and public health, 17(21), 8158. 
+
+Quek, K. F., Low, W. Y., Razack, A. H., Loh, C. S., & Chua, C. B. (2004). Reliability and validity of the Spielberger State-Trait Anxiety Inventory (STAI) among urological patients: a Malaysian study. The Medical journal of Malaysia, 59(2), 258–267. 
+
+Spielberger, C., Gorsuch, R., & Lushene, R. (1964). State Trait Anxiety Inventory. Manual for the STAI. 
+
+Wang, Y., & Ma, Q. (2024). The impact of social isolation on smartphone addiction among college students: the multiple mediating effects of loneliness and COVID-19 anxiety. Frontiers in Psychology, 15, 1391415.
+
+Wilkialis, L., Rodrigues, N. B., Cha, D. S., Siegel, A., Majeed, A., Lui, L. M., ... & McIntyre, R. S. (2021). Social isolation, loneliness and generalized anxiety: implications and associations during the COVID-19 quarantine. Brain sciences, 11(12), 1620. 
+
+**Contact Information**
+
+For questions about this research, please contact:
+
+#### Emma Brown 
+
+#### [browee166\@farmingdale.edu](mailto:browee166@farmingdale.edu) 
+
+#### Applied Psychology Program
+
+#### Farmingdale State College 
+
+#### Faculty Mentor: Dave Brocker 

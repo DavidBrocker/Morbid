@@ -7,5 +7,26 @@
   },
   "about.qmd": {
     "about.html": "d2bc2e4a"
+  },
+  "algospeak.qmd": {
+    "algospeak.html": "7aae85a3"
+  },
+  "lisd.qmd": {
+    "lisd.html": "34e6aba5"
+  },
+  "self_harm.qmd": {
+    "self_harm.html": "4e073f6e"
+  },
+  "eating_disorder.qmd": {
+    "eating_disorder.html": "20b4811a"
+  },
+  "resolving_uncertainty.qmd": {
+    "resolving_uncertainty.html": "2618d053"
+  },
+  "gallery.qmd": {
+    "gallery.html": "259bf7b9"
+  },
+  "trigger.qmd": {
+    "trigger.html": "ec659915"
   }
 }

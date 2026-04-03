@@ -1,0 +1,30 @@
+---
+title: "IGNITE Vol.4"
+subtitle: "Supplementary Information"
+---
+
+::::::::: grid
+::: g-col-4
+[![Social Dynamics in Online Eating Disorder Communities: A Multi-Platform Analysis](LM_Post.PNG)](eating_disorder.html)
+:::
+
+::: g-col-4
+[![For Whom The Trigger Warns: The Effects of Trigger Warnings on Avoidance and Morbid Curiosity](images/clipboard-533692806.png)](trigger.html)
+:::
+
+::: g-col-4
+[![The Effect of Resolving Uncertainty on Facial Expression, Visual Path, and Affect](images/clipboard-1450612597.png)](resolving_uncertainty.html)
+:::
+
+::: g-col-4
+[![Loneliness, Isolation, and Anxiety as a Result of the COVID-19 Pandemic](images/clipboard-3577484256.png)](lisd.html)
+:::
+
+::: g-col-4
+[![The Effect of Word Substitution on Perceived Meaning and Valence](images/clipboard-1660182199.png)](algospeak.html)
+:::
+
+::: g-col-4
+[![Linguistic Framing and Norm Construction in Online Self-Harm Communities](images/clipboard-784562507.png)](self_harm.html)
+:::
+:::::::::
